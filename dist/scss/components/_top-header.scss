@@ -1,0 +1,32 @@
+.top_header {
+  .top_header-inner {
+    position: relative;
+    width: 100%;
+    display: grid;
+    z-index: 210;
+    background-color: #E6E6E6;
+
+    li {
+      opacity: 1;
+      text-align: center;
+      pointer-events: all;
+      padding: 4px 0;
+
+      span {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        a{
+          font-size: 14px;
+          line-height: 1.285;
+          background: none;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

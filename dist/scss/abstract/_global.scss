@@ -51,11 +51,12 @@ h6 {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.3;
-  font-weight: 300;
+  font-family: 'Jost', sans-serif;
+  //font-size: 1.6rem;
+  line-height: 1.375;
   overflow-x: hidden;
-  background: $primary-color;
+  background: $third-color-white;
+  color: $text-color;
 
   //@include breakpoint-up(large) {
   //  font-size: 2rem;
@@ -87,78 +88,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-// section css
 
-.section-container {
-  margin: 4rem auto 64px;
-  max-width: 1280px;
-  padding-inline: 12px;
-  width: 100%;
-  @media (min-width: 768px) {
-    & {
-      padding-inline: 32px;
-    }
-  }
-}
-.section-content{
-  background-color: #fff;
-  border-radius: 4px;
-  overflow-wrap: break-word;
-  padding-block: 48px;
-  position: relative;
-  word-break: break-word;
-}
-
-.section--globalicon {
-  align-items: center;
-  background: $secondary-color;
-  border-radius: 50%;
-  display: flex;
-  height: 64px;
-  justify-content: center;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, -50%);
-  width: 64px;
-}
-
-.section_header {
-  margin: 0 auto;
-  max-width: 632px;
-  padding: 0 32px;
-  text-align: center;
-  @media (min-width: 768px) {
-    & {
-      padding-inline: 32px;
-    }
-  }
-
-  h2 {
-    color: $dark-text;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 8px;
-    @media (min-width: 768px) {
-      & {
-        font-size: 2rem;
-      }
-    }
-  }
-
-  p {
-    color: $dark-light-text;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.42857143;
-    @media (min-width: 768px) {
-      & {
-        font-size: 18px;
-      }
-    }
-  }
-}
 
 .shadow {
   box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
@@ -167,15 +97,7 @@ html:focus-within {
   box-shadow: 0 4px 7px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
 
-.btn-dark {
-  color: #fff !important;
-  background-color: #343a40 !important;
-  border-color: #343a40 !important;
-}
-.btn-outline-dark {
-  color: #343a40 !important;
-  border-color: #343a40 !important;
-}
+
 .lazyloaded {
   opacity: 1 !important;
   transition: opacity 500ms;
@@ -192,9 +114,5 @@ html:focus-within {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
-
-.visible-div{
-  visibility: visible;
 }
 
