@@ -1,0 +1,32 @@
+.help_section {
+  padding: 0.4rem 0.1rem;
+
+  .help_section_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+
+    .help_section_item{
+      padding: 1rem 0.976rem;
+      border: 1px solid $primary-color-ash;
+      border-radius: 2px;
+
+      span {
+        margin-bottom: 12px;
+        display: block;
+      }
+
+      h2{
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+      }
+
+      &:hover{
+        background-color: $primary-color-ash;
+      }
+    }
+  }
+}
