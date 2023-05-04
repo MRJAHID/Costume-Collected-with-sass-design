@@ -79,6 +79,7 @@ textarea,
 select:focus {
   outline: none !important;
 }
+
 input:focus {
   outline: none;
 }
@@ -89,11 +90,11 @@ html:focus-within {
 }
 
 
-
 .shadow {
   box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
-.shadow-lite{
+
+.shadow-lite {
   box-shadow: 0 4px 7px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
 
@@ -102,13 +103,15 @@ html:focus-within {
   opacity: 1 !important;
   transition: opacity 500ms;
 }
+
 .lazy-image {
-  height: unset!important;
-  position: unset!important;
-  object-fit: unset!important;
-  top: unset!important;
-  left: unset!important;
+  height: unset !important;
+  position: unset !important;
+  object-fit: unset !important;
+  top: unset !important;
+  left: unset !important;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
