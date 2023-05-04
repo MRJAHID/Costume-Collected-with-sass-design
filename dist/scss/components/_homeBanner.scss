@@ -62,6 +62,7 @@
 
       .banner_img {
         img {
+
         }
       }
     }
@@ -84,5 +85,13 @@
         }
       }
     }
+  }
+}
+
+.banner_card-img{
+  img{
+    height: 190px;
+    width: auto;
+    object-fit: contain;
   }
 }
