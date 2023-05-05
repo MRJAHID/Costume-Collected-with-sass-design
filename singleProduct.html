@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Costume Collected</title>
+    <!-- Favicon -->
+    <link
+            rel="icon"
+            href="./dist/images/costumescollected merge zwart wit.png"
+            sizes="any"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+          rel="stylesheet">
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--    Flowbite Js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet"/>
+
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+
+    <script src="./app.js"></script>
+</head>
+<body class="antialiased">
+
+<!-- Header || START -->
+<section>
+    <section class="top_header">
+        <ul class="top_header-inner">
+            <li>
+                    <span>
+                    <a target="#"
+                       href="#" class="">Incoming | Shop the latest arrivals here</a>
+                    </span>
+            </li>
+        </ul>
+    </section>
+
+    <header class="header container px-2 mx-auto">
+        <section class="header_top_section">
+            <div class="header_hamburger w-1/6">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="header_topmenu w-4/6">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li>
+                        <a href="#">
+                            <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                        </a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="header_icons w-1/6">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header_bottom_section">
+            <div class="header_bottom_menu_container">
+                <div class="header_bottom_menu">
+                    <div class="_eff108">
+                        <nav class="header_bottom_menu_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Themes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Clothing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Shoes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Bags</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Accessories</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Fabrics</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom_search">
+                <div class="header_bottom_search_container">
+                    <form action="" class="header_bottom_search_form" role="search">
+                        <input aria-expanded="false"
+                               aria-label="Search."
+                               autocapitalize="off"
+                               autocomplete="off" autocorrect="off"
+                               class="" id="search"
+                               maxlength="100" name="q"
+                               placeholder="Search"
+                               spellcheck="false" type="search"
+                               required="" value=""/>
+                        <button aria-label="Search." type="submit"
+                                class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+</section>
+<!-- Header || END -->
+
+<!-- Main Content || START -->
+<main class="my-10">
+
+    <!-- singleProduct  Section || START -->
+    <section class="singleProduct container px-2 mx-auto my-8">
+        <div class="singleProduct_container mb-12 flex">
+            <div class="singleProduct_img w-2/3">
+                <picture class="flex mx-4 overflow-hidden">
+                    <img src="https://cdn-images.farfetch-contents.com/18/98/28/60/18982860_50108541_1000.jpg"
+                         alt="Product Pic"/>
+                    <img src="https://cdn-images.farfetch-contents.com/18/98/28/60/18982860_50108538_1000.jpg"
+                         alt="Product Pic"/>
+                </picture>
+            </div>
+            <div class="singleProduct_right w-1/3">
+                <div class="singleProduct_right_txt px-4 py-5">
+                    <a href="#">Represent</a>
+                    <p>Initial-print denim jacket</p>
+                    <h3>$320</h3>
+                    <div class="singleProduct_discount_txt">
+                        <span>30% on Selected full-price items only. Discount applied at checkout</span>
+                    </div>
+                    <div class="mb-4">
+                        <!--                        Select Size -->
+                        <div style="z-index: 99;" class="mb-4">
+                            <div class="flex w-full items-center justify-start">
+                                <!-- component -->
+                                <div x-data="select" class="relative w-[30rem]" @click.outside="open = false">
+                                    <!-- trigger button -->
+                                    <button type="button" @click="toggle"
+                                            class="flex w-full items-center justify-between rounded bg-white p-2 ring-1 ring-gray-300"
+                                            :class="(open) && 'ring-blue-600'">
+                                        <span style="color:#727272;"
+                                              x-text="(language == '') ? ' &nbsp; &nbsp; &nbsp; Select Size (Clothing Standard)&nbsp; &nbsp; &nbsp;' : language"></span>
+                                        <span class="text-2xl w-5 h-5 grid place-content-center"><i
+                                                class='bx bx-chevron-down'></i></span>
+                                    </button>
+
+                                    <!-- list items -->
+                                    <ul class="z-2 absolute mt-2 w-full rounded bg-gray-50 ring-1 ring-gray-300"
+                                        x-show="open">
+                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                            @click="setLanguage('XS')">
+                                            XS
+                                        </li>
+                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                            @click="setLanguage('S')">
+                                            S
+                                        </li>
+                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                            @click="setLanguage('M')">
+                                            M
+                                        </li>
+                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                            @click="setLanguage('L')">
+                                            L
+                                        </li>
+                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                            @click="setLanguage('XL')">
+                                            XL
+                                        </li>
+                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                            @click="setLanguage('XXL')">
+                                            XXL
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mb-4">
+                            <button type="button"
+                                    class="w-2/3 text-white bg-gray-900 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-semibold rounded text-base px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Add to bag
+                            </button>
+
+                            <button type="button"
+                                    class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+                                <i class="fa-regular fa-heart mr-2"></i>
+                                Wishlist
+                            </button>
+                        </div>
+                        <div>
+                            <h4 class="mb-2">ESTIMATED DELIVERY</>
+                            <h4 class="mb-1">May 8 - May 15</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="singleProductTabs mb-4">
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px text-base font-normal text-center" id="myTab"
+                    data-tabs-toggle="#myTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab"
+                                data-tabs-target="#details" type="button" role="tab" aria-controls="details"
+                                aria-selected="false">THE DETAILS
+                        </button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                                id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                                aria-controls="dashboard" aria-selected="false">DELIVERY & RETURNS
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="myTabContent">
+
+                <!--                THE DETAILS -->
+                <div class="hidden p-4" id="details" role="tabpanel"
+                     aria-labelledby="profile-tab">
+                    <div data-component="TabPanelContainer" tabindex="0" role="tabpanel" id="tabpanel-0"
+                         aria-labelledby="tab-0" class="ltr-cmgatk">
+                        <div class="ltr-cq35i5">
+                            <div class="ltr-182wjbq">
+                                <div class="ltr-13pqkh2">
+                                    <div>
+                                        <a href="#" dir="ltr" class="ltr-50vqd3-Heading-HeadingBold">Represent</a>
+                                        <p class="ltr-4y8w0i-Body">Initial-print denim jacket</p>
+                                    </div>
+                                    <div class="ltr-4y8w0i-Body">
+                                        <p class="ltr-4y8w0i-Body">British
+                                            luxury fashion label REPRESENT gives a refresh to the classic denim jacket.
+                                            Printed with an all-over Initial design in a beige and white colourway, it
+                                            features a front button fastening and two chest flap pockets.</p>
+                                    </div>
+                                    <div class="ltr-fzg9du">
+                                        <h4 class="ltr-vcsfaw-Body-BodyBold">
+                                            Highlights</h4>
+                                        <ul class="_fdc1e5">
+                                            <li class="ltr-4y8w0i-Body">straight-point collar</li>
+                                            <li class="ltr-4y8w0i-Body">front button fastening</li>
+                                            <li class="ltr-4y8w0i-Body">long sleeves</li>
+                                            <li class="ltr-4y8w0i-Body">buttoned cuffs</li>
+                                            <li class="ltr-4y8w0i-Body">two chest flap pockets</li>
+                                            <li class="ltr-4y8w0i-Body">two side slit pockets</li>
+                                            <li class="ltr-4y8w0i-Body">straight hem</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ltr-15eja7h ">
+                                <div class="ltr-13pqkh2 ">
+                                    <div class="ltr-92qs1a">
+                                        <h4 class="ltr-vcsfaw-Body-BodyBold ">
+                                            Composition</h4>
+                                        <p class="ltr-4y8w0i-Body ">
+                                            <span class="ltr-4y8w0i-Body ">Cotton 100%</span>
+                                        </p>
+                                    </div>
+                                    <div class="ltr-92qs1a">
+                                        <h4 class="ltr-vcsfaw-Body-BodyBold ">Wearing</h4>
+                                        <p class="ltr-4y8w0i-Body e1s5vycj0">The model is 1.88 m wearing size L</p>
+                                        <div>The model is also styled with: <a href="#" class="ltr-1kby4wd-Body">Represent
+                                            ankle-zip straight-leg jeans</a>,
+                                            <a href="#" class="ltr-1kby4wd-Body">Represent
+                                                Viper panelled sneakers</a>
+                                        </div>
+                                    </div>
+                                    <div class="ltr-92qs1a"><h4 class="ltr-vcsfaw-Body-BodyBold ">Product
+                                        IDs</h4>
+                                        <p class="ltr-4y8w0i-Body ">FARFETCH ID: <span dir="ltr" class="ltr-4y8w0i-Body e1s5vycj0"> 18982860</span>
+                                        </p>
+                                        <p class="ltr-4y8w0i-Body ">Brand style ID: <span dir="ltr" class="ltr-4y8w0i-Body e1s5vycj0"> M01233285PADDOCK</span>
+                                        </p></div>
+                                </div>
+                            </div>
+                            <div class="ltr-1o3tari ">
+                                <button class="ltr-jno634 ">
+                                    <div data-component="Container" data-is-loaded="true" class="ltr-1ymlzfk">
+                                        <img
+                                                alt="jacket"
+                                                src="https://cdn-images.farfetch-contents.com/18/98/28/60/18982860_50108536_1000.jpg"
+                                                loading="lazy" width="1000" height="1334" class="ltr-1w2up3s">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                DELIVERY RETURNS        -->
+                <div class="hidden p-4" id="dashboard" role="tabpanel"
+                     aria-labelledby="dashboard-tab">
+                    <div data-component="TabPanelContainer" tabindex="0" role="tabpanel" id="tabpanel-3"
+                         aria-labelledby="tab-3" class="ltr-cmgatk e1r2ta6c0">
+                        <div class="ltr-l0tosw ">
+                            <div class="ltr-182wjbq ">
+                                <div class="ltr-jeopbd">
+                                    <div class="ltr-r7lr81"><h4 class="ltr-1e7bs0a-Body-BodyBold ">
+                                        We've got your back</h4>
+                                        <div>
+                                            <ul>
+                                                <li>One delivery fee to most locations (check our Orders &amp; Delivery
+                                                    page)
+                                                </li>
+                                                <li>Free returns within 14 days (excludes final sale and made-to-order
+                                                    items, face masks and certain beauty products containing hazardous
+                                                    or flammable materials, such as fragrances and aerosols)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div><h4 class="ltr-1e7bs0a-Body-BodyBold e1xaa20t0">Import duties information</h4>
+                                        <div>
+                                            <p>Let us handle the legwork.</p>
+
+                                            <p>Delivery duties are included in the item price when shipping to all EU
+                                                countries (excluding the Canary Islands), plus The United Kingdom, USA,
+                                                Canada, China Mainland, Australia, New Zealand, Puerto Rico,
+                                                Switzerland, Singapore, Republic Of Korea, Kuwait, Mexico, Qatar, India,
+                                                Norway, Saudi Arabia, Taiwan Region, Thailand, U.A.E., Japan, Brazil,
+                                                Isle of Man, San Marino, Colombia, Chile, Argentina, Egypt, Lebanon,
+                                                Hong Kong SAR, Bahrain and Turkey. All import duties are included in
+                                                your order – the price you see is the price you pay.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ltr-15eja7h e2xvq5z1">
+                                <div class="ltr-jeopbd">
+                                    <div>
+                                        <h4 class="ltr-1e7bs0a-Body-BodyBold">Estimated delivery</h4>
+                                        <div><p class="ltr-4y8w0i-Body">Express: <span> May 8 - May 15</span>
+                                        </p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ltr-1sg68be e2xvq5z0">
+                                <div class="ltr-jeopbd">
+                                    <div><h4 class="ltr-1e7bs0a-Body-BodyBold e1xaa20t0">Need more information?</h4>
+                                        <ul class="ltr-1tp1224 e1r3xsk40">
+                                            <li><a target="_blank" href="#"
+                                                   class="ltr-1kby4wd-Body e1w8i7z30">Orders &amp; delivery</a></li>
+                                            <li><a target="_blank" href="#"
+                                                   class="ltr-1kby4wd-Body e1w8i7z30">Returns &amp; refunds</a></li>
+                                            <li><a target="_blank" href="#" class="ltr-1kby4wd-Body e1w8i7z30">Duties
+                                                &amp; taxes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- singleProduct  Section || END -->
+
+
+    <!-- Products Showcase Section || START -->
+    <section class="container mb-6 px-2 mx-auto mt-12">
+        <div class="product_showcase">
+            <div class="product_showcase_container">
+                <div class="product_showcase_title">
+                    <p>New Finds: </p>
+                    <a href="#" target="_self" class="">Shop Now</a>
+                </div>
+                <div class="product_showcase_content">
+                    <div class="products">
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/bag1.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>New Finds</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/shoe1.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>New Finds</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/dress1.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>New Finds</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/glass1.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>New Finds</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Showcase Section || END -->
+
+    <!-- Products Showcase Section || START -->
+    <section class="container mb-6 px-2 mx-auto mt-12">
+        <div class="product_showcase">
+            <div class="product_showcase_container">
+                <div class="product_showcase_title">
+                    <p>Back in stock: </p>
+                    <a href="#" target="_self" class="">Shop Now</a>
+                </div>
+                <div class="product_showcase_content">
+                    <div class="products">
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/dress2.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/bag2.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/dress2.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/banner1.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="#">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Showcase Section || END -->
+
+    <!-- Help Section || START -->
+    <section class="container mb-6 px-2 mx-auto mt-8">
+        <div class="help_section">
+            <div class="help_section_items">
+                <a href="#" class="help_section_item">
+                    <span>
+                        <i class="fa-brands fa-stack-exchange"></i>
+                    </span>
+                    <h2> HOW TO RENT </h2>
+                    <p>Your guide to renting and placing orders </p>
+                </a>
+                <a href="#" class="help_section_item">
+                    <span>
+                     <i class="fa-solid fa-circle-question"></i>
+                    </span>
+                    <h2> FAQS </h2>
+                    <p>Your questions answered </p>
+                </a>
+                <a href="#" class="help_section_item">
+                    <span>
+                       <i class="fa-regular fa-comments"></i>
+                    </span>
+                    <h2> NEED HELP? </h2>
+                    <p>Contact our global customer service team </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Help Section || END -->
+
+    <!-- NewsLetter Section || START -->
+    <section class="container mb-6 px-2 mx-auto mt-8">
+        <div class="newsletter">
+            <div class="newsletter_container">
+                <div class="newsletter_left">
+                    <h2 class="">Get 10% off your first order</h2>
+
+                    <p class="">Sign up for our latest news and blogs</p>
+                </div>
+
+
+                <div class="newsletter_right">
+                    <form class="newsletter_form">
+                        <div class="">
+                            <p class="mb-3">GET UPDATES BY</p>
+                            <div class="py-3 newsletter_form_input">
+                                <input type="email" aria-invalid="false"
+                                       autocomplete="email" placeholder="Your email address" name="email"
+                                       class="" value=""/>
+                            </div>
+                            <div class="newsletter_form_btn mb-4">
+                                <button class="">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="">By signing up, you agree to our
+                        <a target="_blank" href="#" class="" style="text-decoration: underline">Privacy
+                            Policy</a>. <span>Unsubscribe anytime at the bottom of our emails. </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NewsLetter Section || END -->
+</main>
+<!-- Main Content || END -->
+
+<!-- Footer Section || START -->
+
+<div class="footer">
+    <div class="inner-footer flex justify-between">
+
+        <!--  for company name and description -->
+        <div class="w-1/3">
+            <div class="footer-items">
+                <a href="#">
+                    <img style="height: 112px; width: auto;" class="header_logo"
+                         src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
+                </a>
+
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nieuwe Hemweg 7G AMSTERDAM</li>
+                    <li style="margin-bottom: 2rem">
+                        <i class="fa-solid fa-clock"></i>Thursday to
+                        Sunday from 10:00 to 17:30
+                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+31 (0) 20 6249066</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                </ul>
+
+                <!--   for social links -->
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="w-2/3 flex justify-between">
+            <!--  for quick links  -->
+            <div class="footer-items w-1/3">
+                <h3>OTHERS</h3>
+                <div class="border1"></div> <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>Faq</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for some other links -->
+            <div class="footer-items w-1/3">
+                <h3>ABOUT</h3>
+                <div class="border1"></div>  <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>Portfolio</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for contact us info -->
+            <div class="footer-items w-1/3">
+                <h3>INFORMATION</h3>
+                <div class="border1"></div>
+                <ul>
+                    <a href="#">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms of service</li>
+                    </a>
+                    <a href="#">
+                        <li>Disclaimer</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+        © Copyright 2023 COSTUME COLLECTED Limited. All rights reserved.
+    </div>
+</div>
+
+<!-- Footer Section || END -->
+
+<!--Flowbite Js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+</body>
+</html>

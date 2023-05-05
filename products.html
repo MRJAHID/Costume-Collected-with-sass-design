@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Costume Collected</title>
+    <!-- Favicon -->
+    <link
+            rel="icon"
+            href="./dist/images/costumescollected merge zwart wit.png"
+            sizes="any"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+          rel="stylesheet">
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--    Flowbite Js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet"/>
+
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+
+    <script src="./app.js"></script>
+</head>
+<body class="antialiased">
+
+<!-- Header || START -->
+<section>
+    <section class="top_header">
+        <ul class="top_header-inner">
+            <li>
+                    <span>
+                    <a target="#"
+                       href="#" class="">Incoming | Shop the latest arrivals here</a>
+                    </span>
+            </li>
+        </ul>
+    </section>
+
+    <header class="header container px-2 mx-auto">
+        <section class="header_top_section">
+            <div class="header_hamburger w-1/6">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="header_topmenu w-4/6">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li>
+                        <a href="#">
+                            <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                        </a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="header_icons w-1/6">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header_bottom_section">
+            <div class="header_bottom_menu_container">
+                <div class="header_bottom_menu">
+                    <div class="_eff108">
+                        <nav class="header_bottom_menu_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Themes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Clothing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Shoes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Bags</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Accessories</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Fabrics</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom_search">
+                <div class="header_bottom_search_container">
+                    <form action="" class="header_bottom_search_form" role="search">
+                        <input aria-expanded="false"
+                               aria-label="Search."
+                               autocapitalize="off"
+                               autocomplete="off" autocorrect="off"
+                               class="" id="search"
+                               maxlength="100" name="q"
+                               placeholder="Search"
+                               spellcheck="false" type="search"
+                               required="" value=""/>
+                        <button aria-label="Search." type="submit"
+                                class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+</section>
+<!-- Header || END -->
+
+<!-- Main Content || START -->
+<main class="my-10">
+    <section class="products container px-2 mx-auto my-4">
+
+        <!--   Breadcrumb     -->
+        <div class="breadcrumb px-5   my-4">
+            <div class="breadcrumb_inner">
+                <p><a href="#">Home</a> &nbsp; <span> > </span> &nbsp; <a href="#">New In</a></p>
+            </div>
+        </div>
+
+        <!--   Slogan     -->
+        <div class="products_title px-5  my-6">
+            <p>HERE'S WHAT'S NEW IN TODAY, LIFE</p>
+        </div>
+
+        <!-- Products Showcase Section || START -->
+        <section class="container mb-6 px-2 mx-auto mt-12">
+            <div class="product_showcase">
+                <div class="flex">
+                    <div class="w-1/4 pr-2">
+
+                        <div id="accordion-flush" data-accordion="collapse"
+                             data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                             data-inactive-classes="text-gray-500 dark:text-gray-400">
+                            <h2 id="accordion-flush-heading-1">
+                                <button type="button"
+                                        class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500  "
+                                        data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                                        aria-controls="accordion-flush-body-1">
+                                    <span style="color: #222;">Themes</span>
+                                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill= "#222"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400"> is an open-source library of
+                                        interactive components built on top of Tailwind CSS including buttons,
+                                        dropdowns, modals, navbars, and more.</p>
+                                </div>
+                            </div>
+                            <h2 id="accordion-flush-heading-2">
+                                <button type="button"
+                                        class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500  "
+                                        data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                                        aria-controls="accordion-flush-body-2">
+                                    <span style="color: #222;">Genus</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill= "#222"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized
+                                        and designed using the Figma software so everything you see in the library has a
+                                        design equivalent in our Figma file.</p>
+                                </div>
+                            </div>
+
+                            <!--                            Categories-->
+                            <h2 id="accordion-flush-heading-3">
+                                <button type="button"
+                                        class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500  "
+                                        data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                                        aria-controls="accordion-flush-body-3">
+                                    <span style="color: #222;">Categories</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill= "#222"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                                <div class="py-3 border-b border-gray-200 dark:border-gray-700">
+                                    <div class="flex items-center mb-4">
+                                        <input id="default-checkbox" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="default-checkbox"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Jackets</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="checked-checkbox" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="checked-checkbox"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Accessories</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="dresses" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="dresses"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Dresses</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="tables" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="tables"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Tables</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--                            Size    -->
+
+                            <h2 id="accordion-flush-heading-4">
+                                <button type="button"
+                                        class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500  "
+                                        data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
+                                        aria-controls="accordion-flush-body-4">
+                                    <span style="color: #222;">Size</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill= "#222"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+
+                                    <label for="countries"
+                                           class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                                        Your Size</label>
+                                    <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option selected>Choose a size</option>
+                                        <option value="US">L</option>
+                                        <option value="CA">XL</option>
+                                        <option value="FR">XXL</option>
+                                        <option value="DE">M</option>
+                                        <option value="DE">S</option>
+                                        <option value="DE">XS</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <h2 id="accordion-flush-heading-5">
+                                <button type="button"
+                                        class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500  "
+                                        data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
+                                        aria-controls="accordion-flush-body-5">
+                                    <span style="color: #222;">Color</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill= "#222"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <div class="flex items-center mb-4">
+                                        <input id="Blue" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="Blue"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Blue</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="yellow" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="yellow"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Yellow</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="black" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="black"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Black</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="white" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="white"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">White</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="red" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="red"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Red</label>
+                                    </div>
+                                    <div class="flex items-center  mb-4">
+                                        <input id="green" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="green"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Green</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <h2 id="accordion-flush-heading-6">
+                                <button type="button"
+                                        class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900  "
+                                        data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
+                                        aria-controls="accordion-flush-body-6">
+                                    <span style="color: #222;">Price Range</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill= "#222"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                    <div>
+                                        <img src="./dist/images/priceRange.png"/>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <h2 id="accordion-flush-heading-7">
+                                <button type="button"
+                                        class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900"
+                                        data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
+                                        aria-controls="accordion-flush-body-7">
+                                    <span style="color: #222;">Conscious</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill= "#222"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+                                <div class="py-2 border-b border-gray-200 dark:border-gray-700">
+                                    <div class="flex items-center  mb-4">
+                                        <input id="conscious" type="checkbox" value=""
+                                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="conscious"
+                                               class="ml-2 text-md font-normal text-gray-900 dark:text-gray-300">Conscious</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="w-3/4 product_showcase_container">
+                        <div class="product_showcase_tag">
+                            <div class="product_showcase_tag_wrap">
+                                <!--  Top Tag   -->
+                                <div class="product_showcase_tag_inner">
+                                    <a href="#" class="products_tag">
+                                        <p>
+                                            <span class="">Women</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="products_tag">
+                                        <p>
+                                            <span class="">Men</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="products_tag">
+                                        <p>
+                                            <span class="">Kids</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="products_tag">
+                                        <p>
+                                            <span class="">Unix</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="products_tag">
+                                        <p>
+                                            <span class="">Collections</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="products_tag">
+                                        <p>
+                                            <span class="">Art</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <!-- Short By Code -->
+                                <div style="z-index: 99;">
+                                    <main class="flex w-full items-center justify-center">
+                                        <!-- component -->
+                                        <div x-data="select" class="relative w-[30rem]" @click.outside="open = false">
+                                            <!-- trigger button -->
+                                            <button type="button" @click="toggle"
+                                                    class="flex w-full items-center justify-between rounded bg-white p-2 ring-1 ring-gray-300"
+                                                    :class="(open) && 'ring-blue-600'">
+                                                <span x-text="(language == '') ? ' &nbsp; &nbsp; &nbsp; Short by &nbsp; &nbsp; &nbsp;' : language"></span>
+                                                <span class="text-2xl w-5 h-5 grid place-content-center"><i
+                                                        class='bx bx-chevron-down'></i></span>
+                                            </button>
+
+                                            <!-- list items -->
+                                            <ul class="z-2 absolute mt-2 w-full rounded bg-gray-50 ring-1 ring-gray-300"
+                                                x-show="open">
+                                                <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                                    @click="setLanguage('Our Picks')">
+                                                    Our Picks
+                                                </li>
+                                                <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                                    @click="setLanguage('Newest First')">
+                                                    Newest First
+                                                </li>
+                                                <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                                    @click="setLanguage('Price: high to low')">
+                                                    Price: high to low
+                                                </li>
+                                                <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
+                                                    @click="setLanguage('Price: low to high')">
+                                                    Price: low to high
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_showcase_content">
+                            <div class="products productspage">
+                                <div class="product">
+                                    <div class="product_img">
+                                        <img src="./dist/images/bag1.png"
+                                             alt=""/>
+                                        <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                    </div>
+                                    <div class="product_text">
+                                        <span>New Finds</span>
+                                        <a href="#">Christoper Kane</a>
+                                        <p>Full Bloom A-Line Dress</p>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product_img">
+                                        <img src="./dist/images/shoe1.png"
+                                             alt=""/>
+                                        <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                    </div>
+                                    <div class="product_text">
+                                        <span>New Finds</span>
+                                        <a href="#">Christoper Kane</a>
+                                        <p>Full Bloom A-Line Dress</p>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product_img">
+                                        <img src="./dist/images/dress1.png"
+                                             alt=""/>
+                                        <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                    </div>
+                                    <div class="product_text">
+                                        <span>New Finds</span>
+                                        <a href="#">Christoper Kane</a>
+                                        <p>Full Bloom A-Line Dress</p>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="product_img">
+                                        <img src="./dist/images/glass1.png"
+                                             alt=""/>
+                                        <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                    </div>
+                                    <div class="product_text">
+                                        <span>New Finds</span>
+                                        <a href="#">Christoper Kane</a>
+                                        <p>Full Bloom A-Line Dress</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Products Showcase Section || END -->
+
+        <!-- Help Section || START -->
+        <section class="container mb-6 px-2 mx-auto mt-8">
+            <div class="help_section">
+                <div class="help_section_items">
+                    <a href="#" class="help_section_item">
+                    <span>
+                        <i class="fa-brands fa-stack-exchange"></i>
+                    </span>
+                        <h2> HOW TO RENT </h2>
+                        <p>Your guide to renting and placing orders </p>
+                    </a>
+                    <a href="#" class="help_section_item">
+                    <span>
+                     <i class="fa-solid fa-circle-question"></i>
+                    </span>
+                        <h2> FAQS </h2>
+                        <p>Your questions answered </p>
+                    </a>
+                    <a href="#" class="help_section_item">
+                    <span>
+                       <i class="fa-regular fa-comments"></i>
+                    </span>
+                        <h2> NEED HELP? </h2>
+                        <p>Contact our global customer service team </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Help Section || END -->
+
+        <!-- NewsLetter Section || START -->
+        <section class="container mb-6 px-2 mx-auto mt-8">
+            <div class="newsletter">
+                <div class="newsletter_container">
+                    <div class="newsletter_left">
+                        <h2 class="">Get 10% off your first order</h2>
+
+                        <p class="">Sign up for our latest news and blogs</p>
+                    </div>
+
+
+                    <div class="newsletter_right">
+                        <form class="newsletter_form">
+                            <div class="">
+                                <p class="mb-3">GET UPDATES BY</p>
+                                <div class="py-3 newsletter_form_input">
+                                    <input type="email" aria-invalid="false"
+                                           autocomplete="email" placeholder="Your email address" name="email"
+                                           class="" value=""/>
+                                </div>
+                                <div class="newsletter_form_btn mb-4">
+                                    <button class="">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="">By signing up, you agree to our
+                            <a target="_blank" href="#" class="" style="text-decoration: underline">Privacy
+                                Policy</a>. <span>Unsubscribe anytime at the bottom of our emails. </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NewsLetter Section || END -->
+    </section>
+</main>
+<!-- Main Content || END -->
+
+<!-- Footer Section || START -->
+
+<div class="footer">
+    <div class="inner-footer flex justify-between">
+
+        <!--  for company name and description -->
+        <div class="w-1/3">
+            <div class="footer-items">
+                <a href="#">
+                    <img style="height: 112px; width: auto;" class="header_logo"
+                         src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
+                </a>
+
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nieuwe Hemweg 7G AMSTERDAM</li>
+                    <li style="margin-bottom: 2rem">
+                        <i class="fa-solid fa-clock"></i>Thursday to
+                        Sunday from 10:00 to 17:30
+                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+31 (0) 20 6249066</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                </ul>
+
+                <!--   for social links -->
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="w-2/3 flex justify-between">
+            <!--  for quick links  -->
+            <div class="footer-items w-1/3">
+                <h3>OTHERS</h3>
+                <div class="border1"></div> <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>Faq</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for some other links -->
+            <div class="footer-items w-1/3">
+                <h3>ABOUT</h3>
+                <div class="border1"></div>  <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>Portfolio</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for contact us info -->
+            <div class="footer-items w-1/3">
+                <h3>INFORMATION</h3>
+                <div class="border1"></div>
+                <ul>
+                    <a href="#">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms of service</li>
+                    </a>
+                    <a href="#">
+                        <li>Disclaimer</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+        © Copyright 2023 COSTUME COLLECTED Limited. All rights reserved.
+    </div>
+</div>
+
+<!-- Footer Section || END -->
+
+<!--Flowbite Js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+</body>
+</html>

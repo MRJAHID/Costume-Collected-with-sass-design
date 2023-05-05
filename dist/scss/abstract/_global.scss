@@ -112,10 +112,17 @@ html:focus-within {
   left: unset !important;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
 
+
+//
+
+.breadcrumb {
+  .breadcrumb_inner{
+    a{
+      font-size:0.875rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
