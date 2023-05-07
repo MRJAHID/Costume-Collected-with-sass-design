@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Costume Collected</title>
+    <!-- Favicon -->
+    <link
+            rel="icon"
+            href="./dist/images/costumescollected merge zwart wit.png"
+            sizes="any"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+          rel="stylesheet">
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+
+    <!--    Flowbite Js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet"/>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+</head>
+<body class="antialiased">
+<!-- Header || START -->
+<section>
+    <section class="top_header">
+        <ul class="top_header-inner">
+            <li>
+                    <span>
+                    <a target="#"
+                       href="#" class="">Incoming | Shop the latest arrivals here</a>
+                    </span>
+            </li>
+        </ul>
+    </section>
+
+    <header class="header container px-2 mx-auto">
+        <section class="header_top_section">
+            <div class="header_hamburger w-1/6">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="header_topmenu w-4/6">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li>
+                        <a href="#">
+                            <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                        </a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="header_icons w-1/6">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header_bottom_section">
+            <div class="header_bottom_menu_container">
+                <div class="header_bottom_menu">
+                    <div class="_eff108">
+                        <nav class="header_bottom_menu_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Themes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Clothing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Shoes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Bags</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Accessories</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Fabrics</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom_search">
+                <div class="header_bottom_search_container">
+                    <form action="" class="header_bottom_search_form" role="search">
+                        <input aria-expanded="false"
+                               aria-label="Search."
+                               autocapitalize="off"
+                               autocomplete="off" autocorrect="off"
+                               class="" id="search"
+                               maxlength="100" name="q"
+                               placeholder="Search"
+                               spellcheck="false" type="search"
+                               required="" value=""/>
+                        <button aria-label="Search." type="submit"
+                                class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+</section>
+<!-- Header || END -->
+
+<!-- Main Content || START -->
+<main class="py-12 bg-gray-100">
+    <section class="">
+        <div class="section-breadcrumbs">
+            <ul class="breadcrumbs justify-center">
+                <li class="breadcrumbs-item">
+                    <a href="/" class="breadcrumbs-element">Home</a>
+                    <img src="https://aboutfarfetch.com/Assets/img/icons/ChevronRight.svg">
+                </li>
+                <li class="breadcrumbs-item">
+                    <span class="breadcrumbs-element breadcrumb-not-active">News</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--        Title       -->
+        <section class="content-title-generic">
+            <div class="c-title-generic">
+                <div class="container mx-auto px-2">
+                    <div class="text-center">
+                        <h1 class="h1 h-page-title">BLOG</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    Blogs       -->
+        <section class="news-section">
+
+            <!--        Blogs       -->
+            <div class="container mx-auto px-2">
+                <div class="flex flex-wrap">
+                    <div class="c-press">
+                        <div class="w-full">
+                            <div class="flex flex-wrap mx-0">
+                                <!--          Shorting    -->
+                                <div class="w-1/2">
+                                    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay"
+                                            data-dropdown-delay="500" data-dropdown-trigger="hover"
+                                            class="bg-white-700 text-gray-900 hover:text-gray-800 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                            type="button">All
+                                        <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
+                                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownDelay"
+                                         class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                            aria-labelledby="dropdownDelayButton">
+                                            <li>
+                                                <a href="#"
+                                                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">All</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2023</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2022</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2020</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <!--                 Layout  -->
+                                <div class="w-1/2 c-icons">
+                                    <div class="flex flex-wrap  justify-end mx-0">
+                                        <div class="icon float-left">
+                                            <a class="icon-window jq_window"
+                                               style="background-image: url(https://aboutfarfetch.com/assets/img/icons/icon-window-select.png)"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="w-full">
+                            <div id="card-list" class="card-columns news-cards jq_gridView">
+
+                                <div class="card p-2 visible-card"><a
+                                        href="#">
+                                    <img class="card-img-top"
+                                         src="https://aboutfarfetch.com/media/1726/reebook_pressrelease.png"
+                                         alt="Reebook_PressRelease.png">
+                                    <div class="card-body">
+                                        <h3 class="pre-title">03.05.2023</h3>
+                                        <div class="title">COSTUME COLLECTED launches Reebok partnership</div>
+                                        <p class="lead"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="card p-2 p-md-12 visible-card"><a
+                                        href="#">
+                                    <img class="card-img-top"
+                                         src="https://aboutfarfetch.com/media/1718/pressrelease.png"
+                                         alt="PressRelease (7).png">
+                                    <div class="card-body">
+                                        <h3 class="pre-title">20.04.2023</h3>
+                                        <div class="title">Nick Tran joins COSTUME COLLECTED as Chief Marketing Officer</div>
+                                        <p class="lead"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="card p-2 p-md-12 visible-card"><a
+                                        href="#">
+                                    <img class="card-img-top"
+                                         src="https://aboutfarfetch.com/media/1712/pressrelease-5.png"
+                                         alt="PressRelease.png (8)">
+                                    <div class="card-body">
+                                        <h3 class="pre-title">29.03.2023</h3>
+                                        <div class="title">COSTUME COLLECTED presents new SS23 Brand Campaign featuring iconic
+                                            actress Marcia Cross of Desperate Housewives Fame
+                                        </div>
+                                        <p class="lead"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="card p-2 p-md-12 visible-card"><a
+                                        href="#">
+                                    <img class="card-img-top"
+                                         src="https://aboutfarfetch.com/media/1722/pressrelease-7.png"
+                                         alt="PressRelease (6).png">
+                                    <div class="card-body">
+                                        <h3 class="pre-title">15.03.2023</h3>
+                                        <div class="title">There Was One™ introduces Activewear and Kidswear categories
+                                            on
+                                            the COSTUME COLLECTED Marketplace
+                                        </div>
+                                        <p class="lead"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="card p-2 p-md-12 visible-card"><a
+                                        href="#">
+                                    <img class="card-img-top"
+                                         src="https://aboutfarfetch.com/media/1715/pressrelease-6.png"
+                                         alt="PressRelease (5).png">
+                                    <div class="card-body">
+                                        <h3 class="pre-title">24.02.2023</h3>
+                                        <div class="title">COSTUME COLLECTED Announces Fourth Quarter and Full Year 2022 Results
+                                        </div>
+                                        <p class="lead"></p>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="card p-2 p-md-12 visible-card"><a
+                                        href="#">
+                                    <img class="card-img-top"
+                                         src="https://aboutfarfetch.com/media/1698/pressrelease-4.png"
+                                         alt="PressRelease (4).png">
+                                    <div class="card-body">
+                                        <h3 class="pre-title">02.02.2023</h3>
+                                        <div class="title">Off-White™ and Chicago Bulls create capsule collection in
+                                            tribute
+                                            to Virgil Abloh for COSTUME COLLECTED BEAT 008
+                                        </div>
+                                        <p class="lead"></p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="c-button w-full text-center">
+                        <a href="#" id="loadMore">More Press</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Touch with us-->
+            <div class="c-getTouch">
+                <div class="container px-2 mx-auto">
+                    <div class="text-center">
+                        <h2>Get in touch with our Communications team</h2>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <div class="col">
+                            <div class="flex flex-wrap mx-0 text-center profile-info">
+                                <div class="w-full text-center jq_get-name">Susannah Clark</div>
+
+                                <div class="w-full text-center jq_get-position">VP Communications</div>
+                                <div class="w-full jq_get-email"><a style="text-decoration: underline" href="mailto:Susannah.clark@costumecollected.com">Susannah.clark@costumecollected.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="flex flex-wrap mx-0 text-center profile-info">
+                                <div class="w-full text-center jq_get-name">COSTUME COLLECTED</div>
+
+                                <div class="w-full text-center jq_get-position">Communications team</div>
+                                <div class="w-full jq_get-email"><a  style="text-decoration: underline" href="mailto:media@costumecollected.com">media@costumecollected.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--        Title-->
+            <section class="content-title-generic">
+                <div class="c-title-generic">
+                    <div class="container">
+                        <div class="text-center text-2xl font-medium">
+                            Latest Collabs
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--        Related Section -->
+            <section class="onword-section">
+                <div class="container mx-auto px-2">
+                    <div class="flex flex-wrap">
+                        <div class="w-1/3 responsive-space">
+
+                            <a class="cards" href="#">
+
+                                <div class="c-image">
+                                    <img class="onword-img" src="https://aboutfarfetch.com/media/1044/browns-east.jpg">
+                                </div>
+
+                                <div class="onword-wrapper">
+                                    <h3 class="h3">Iconic British Boutiques</h3>
+                                    <div>Bflex flex-wrapns</div>
+                                </div>
+
+                            </a>
+
+                        </div>
+                        <div class="w-1/3 responsive-space">
+
+                            <a class="cards" href="#">
+
+                                <div class="c-image">
+                                    <img class="onword-img"
+                                         src="https://aboutfarfetch.com/media/1272/corporate-site_ss20-1.jpg">
+                                </div>
+
+                                <div class="onword-wrapper">
+                                    <h3 class="h3">The Global Platform For Luxury </h3>
+                                    <div>FARFETCH</div>
+                                </div>
+
+                            </a>
+
+                        </div>
+                        <div class="w-1/3 responsive-space">
+
+                            <a class="cards" href="#">
+
+                                <div class="c-image">
+                                    <img class="onword-img" src="https://aboutfarfetch.com/media/1044/browns-east.jpg">
+                                </div>
+
+                                <div class="onword-wrapper">
+                                    <h3 class="h3">Iconic British Boutiques</h3>
+                                    <div>Bflex flex-wrapns</div>
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</main>
+<!-- Main Content || END -->
+
+<!-- Footer Section || START -->
+<div class="footer">
+    <div class="inner-footer flex justify-between">
+
+        <!--  for company name and description -->
+        <div class="w-1/3">
+            <div class="footer-items">
+                <a href="#">
+                    <img style="height: 112px; width: auto;" class="header_logo"
+                         src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
+                </a>
+
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nieuwe Hemweg 7G AMSTERDAM</li>
+                    <li style="margin-bottom: 2rem">
+                        <i class="fa-solid fa-clock"></i>Thursday to
+                        Sunday from 10:00 to 17:30
+                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+31 (0) 20 6249066</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                </ul>
+
+                <!--   for social links -->
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="w-2/3 flex justify-between">
+            <!--  for quick links  -->
+            <div class="footer-items w-1/3">
+                <h3>OTHERS</h3>
+                <div class="border1"></div> <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>Faq</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for some other links -->
+            <div class="footer-items w-1/3">
+                <h3>ABOUT</h3>
+                <div class="border1"></div>  <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>Portfolio</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for contact us info -->
+            <div class="footer-items w-1/3">
+                <h3>INFORMATION</h3>
+                <div class="border1"></div>
+                <ul>
+                    <a href="#">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms of service</li>
+                    </a>
+                    <a href="#">
+                        <li>Disclaimer</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+        © Copyright 2023 COSTUME COLLECTED Limited. All rights reserved.
+    </div>
+</div>
+<!-- Footer Section || END -->
+
+<!--Flowbite Js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+</html>

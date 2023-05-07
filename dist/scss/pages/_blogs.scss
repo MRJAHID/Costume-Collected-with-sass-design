@@ -1,0 +1,97 @@
+.news-section {
+  z-index: 1;
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  .c-press {
+    width: 100%;
+
+    .c-icons {
+      a {
+        float: left;
+        width: 21px;
+        height: 21px;
+        display: block;
+        background-color: transparent;
+        margin: 5px 8px 0 5px;
+      }
+    }
+  }
+
+  .card-columns{
+    column-gap: 30px;
+    column-count: 3;
+    orphans: 1;
+    widows: 1;
+  }
+
+  .card-columns.news-cards {
+    margin-top: 24px;
+
+    .card {
+      padding: 0 !important;
+      border: none;
+      border-radius: 0;
+      margin-bottom: 30px;
+      cursor: pointer;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      position: relative;
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .card-img-top {
+        border-radius: 0;
+        max-width: 100%;
+        transition: .3s all ease-in-out;
+        width: 100%;
+      }
+    }
+
+    .card-body {
+      padding: 24px 30px 24px 30px;
+      height: auto;
+      transition: .3s all ease-in-out;
+
+      h3 {
+        text-align: left;
+        padding-bottom: 12px;
+        margin-bottom: 0;
+        font-size: 1.1rem;
+        line-height: 1.375;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .c-button {
+    width: 100%;
+    margin-top: calc(57px - 30px);
+    a {
+      text-decoration: underline;
+       cursor: pointer;
+    }
+  }
+
+
+  .c-getTouch {
+    margin: 60px auto 42px auto;
+    background-color: #fff;
+    padding: 45px 0 45px 0;
+    h2 {
+      margin-bottom: 25px;
+      font-size: 2rem
+    }
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
