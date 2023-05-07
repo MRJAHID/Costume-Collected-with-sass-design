@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Costume Collected</title>
+    <!-- Favicon -->
+    <link
+            rel="icon"
+            href="./dist/images/costumescollected merge zwart wit.png"
+            sizes="any"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+          rel="stylesheet">
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+
+    <!--    Flowbite Js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet"/>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+</head>
+<body class="antialiased">
+<!-- Header || START -->
+<section>
+    <section class="top_header">
+        <ul class="top_header-inner">
+            <li>
+                    <span>
+                    <a target="#"
+                       href="#" class="">Incoming | Shop the latest arrivals here</a>
+                    </span>
+            </li>
+        </ul>
+    </section>
+
+    <header class="header container px-2 mx-auto">
+        <section class="header_top_section">
+            <div class="header_hamburger w-1/6">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="header_topmenu w-4/6">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li>
+                        <a href="#">
+                            <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                        </a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="header_icons w-1/6">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header_bottom_section">
+            <div class="header_bottom_menu_container">
+                <div class="header_bottom_menu">
+                    <div class="_eff108">
+                        <nav class="header_bottom_menu_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Themes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Clothing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Shoes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Bags</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Accessories</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Fabrics</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom_search">
+                <div class="header_bottom_search_container">
+                    <form action="" class="header_bottom_search_form" role="search">
+                        <input aria-expanded="false"
+                               aria-label="Search."
+                               autocapitalize="off"
+                               autocomplete="off" autocorrect="off"
+                               class="" id="search"
+                               maxlength="100" name="q"
+                               placeholder="Search"
+                               spellcheck="false" type="search"
+                               required="" value=""/>
+                        <button aria-label="Search." type="submit"
+                                class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+</section>
+<!-- Header || END -->
+
+<!-- Main Content || START -->
+<main class="py-12 bg-gray-100">
+    <!-- Blog Section || START -->
+    <section class="container faq_section mb-6 px-2 mx-auto mt-4">
+        <div class="helpContact field">
+            <div class="w-1/4">
+                <div class="footerPageMenu-leftmenu">
+                    <ul class="footerPageMenu-leftmenu-list">
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class="footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem" href="contactus.html"
+                               data-target="contactus">Contact us</a></li>
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class="footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem" href="/how-to-shop"
+                               data-target="howtoshop">How to shop</a></li>
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class="footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem" href="/orders-and-shipping"
+                               data-target="ordersandshipping">Orders &amp; delivery</a></li>
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class="footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem" href="/payment-and-pricing"
+                               data-target="paymentandpricing">Payment &amp; pricing</a></li>
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class="faqSelected footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem active" href="/faqs"
+                               data-target="faqs">FAQs</a></li>
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class="footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem" href="/terms-and-conditions"
+                               data-target="termsandconditions">Terms &amp; conditions</a></li>
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class="footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem" href="/privacy-policy"
+                               data-target="privacypolicy">Privacy policy</a></li>
+
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class=" footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem"
+                               href="/farfetch-accessibility" data-target="farfetchaccessibility">Accessibility</a></li>
+                        <li class="footerPageMenu-leftmenu-list-item">
+                            <a class=" footerPageMenu-leftmenu-list-itemUrl js-sideMenuItem"
+                               href="/promotion-terms-and-conditions" data-target="promotiontermsandconditions">Promotion
+                                terms &amp; conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-3/4">
+                <div id="js-sidekickSeo" style="margin-bottom: 1rem; height: 29px; font-size: 22px; line-height: 29px;"
+                     class="">
+                    <h1 class="sidekick__title">FAQs</h1>
+                </div>
+
+                <div>
+                    <div id="accordion-open" data-accordion="open">
+                        <h2 id="accordion-open-heading-1">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-1" aria-expanded="true"
+                                    aria-controls="accordion-open-body-1">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                                                     viewBox="0 0 20 20"
+                                                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                        clip-rule="evenodd"></path></svg> How to rent and place an order</span>
+                                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
+                            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                <h2 class="mb-2 font-medium">
+                                    Do I need an account to place an order?</h2>
+                                <p class="mb-2">No, all you need is an email address to
+                                    place and track orders. To checkout faster, access your wishlist and order updates,
+                                    we recommend setting up a FARFETCH account.
+
+                                    If you create a FARFETCH account and place an order, you'll be automatically
+                                    enrolled in our loyalty programme, Access. Every piece you buy takes you one step
+                                    closer to unlocking exclusive rewards – from early sale access and priority customer
+                                    care to unlimited free shipping and a dedicated personal stylist.</p>
+                                <h2 class="mb-2 font-medium">How do I receive FARFETCH email updates?</h2>
+
+                                <p class="mb-2">Stay informed of new arrivals, trends and exclusive promotions by
+                                    entering your email address at the bottom of our homepage. You can manage your email
+                                    preferences in your account.
+                                </p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-open-heading-2">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-2" aria-expanded="false"
+                                    aria-controls="accordion-open-body-2">
+                                <span class="flex items-center">
+                                    <svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                         viewBox="0 0 20 20"
+                                         xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path></svg>Costume Collected pricing and payments</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+                            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                <h2 class="mb-2 font-medium">
+                                    Why is Costume Collected pricing different??</h2>
+
+                                <p class="mb-2">It's down to our unique business model. At FARFETCH, you're shopping
+                                    items from our luxury brands and partner boutiques worldwide.
+                                    <br/>
+                                    Prices are determined by each FARFETCH brand and partner boutique, so the price of
+                                    the same item may vary depending on where it's coming from and your location. That's
+                                    also why placing an item in your shopping bag or wishlist won't reserve it at a
+                                    particular price.
+                                    <br/>
+
+                                    Although we don’t have any control over price variation, we'll always offer you the
+                                    best price available to your destination when you place your order.
+                                </p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-open-heading-3">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-3" aria-expanded="false"
+                                    aria-controls="accordion-open-body-3">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                                                     viewBox="0 0 20 20"
+                                                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                        clip-rule="evenodd"></path></svg> Delivery, duties and taxes</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+                            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                                <h2 class="mb-2 font-medium">
+
+                                    How much will I be charged for delivery?</h2>
+
+                                <p class="mb-2">This varies depending on the size, weight and destination of your chosen
+                                    items. The good news is we offer One Delivery Fee for orders above a certain
+                                    threshold – this means you can order multiple pieces from multiple locations for one
+                                    fee. You'll see the delivery fee at the checkout.
+                                    <br/>
+                                </p>
+
+                                <h2 class="mb-2 font-medium">
+                                    When will I receive my item and how can I track delivery?</h2>
+
+                                <p class="mb-2">Once your order is confirmed, we'll send it within 2 business days.
+                                    Depending on your location and selected delivery method, delivery can take 2-7
+                                    business days. If you ordered from multiple FARFETCH brands and partner boutiques,
+                                    your items will arrive separately. We'll email you with the tracking information and
+                                    an estimated delivery date when each item is sent.
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-open-heading-4">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-4" aria-expanded="false"
+                                    aria-controls="accordion-open-body-4">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                                                     viewBox="0 0 20 20"
+                                                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                        clip-rule="evenodd"></path></svg> Hygiene and washing</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-4">
+                            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                                <h2 class="mb-2 font-medium">How much will I be charged for delivery?</h2>
+
+                                <p class="mb-2">This varies depending on the size, weight and destination of your chosen
+                                    items. The good news is we offer One Delivery Fee for orders above a certain
+                                    threshold – this means you can order multiple pieces from multiple locations for one
+                                    fee. You'll see the delivery fee at the checkout.
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-open-heading-5">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-5" aria-expanded="false"
+                                    aria-controls="accordion-open-body-5">
+                                <span class="flex items-center">
+                                    <svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                         viewBox="0 0 20 20"
+                                         xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path></svg>Size and fit</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-5" class="hidden" aria-labelledby="accordion-open-heading-5">
+                            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                <h2 class="mb-2 font-medium">How can I get a better understanding on how a piece will
+                                    fit?</h2>
+
+                                <p class="mb-2">
+                                    Go to the product information page and select the Size & Fit tab to view the size,
+                                    fit, cut and model measurements. You can find the material composition and care
+                                    instructions on The Details tab.
+                                    <br/>
+                                </p>
+
+                                <h2 class="mb-2 font-medium">Why do designer sizes vary?</h2>
+
+                                <p class="mb-2">
+                                    International sizes are slightly different when converted and some designers fit
+                                    larger or smaller than others. That's why we provide specific information for each
+                                    item.
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <h2 id="accordion-open-heading-6">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-6" aria-expanded="false"
+                                    aria-controls="accordion-open-body-6">
+                                <span class="flex items-center">
+                                    <svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                         viewBox="0 0 20 20"
+                                         xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path></svg>Product availability, authentic and pre-owned items</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-6" class="hidden" aria-labelledby="accordion-open-heading-6">
+                            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                <h2 class="mb-2 font-medium">Are Costume Collected items guaranteed authentic?</h2>
+
+                                <p class="mb-2">
+                                    Our offering is expertly curated by the best luxury fashion brands and boutiques
+                                    around the globe and all our items are guaranteed authentic.
+                                    <br/>
+                                </p>
+
+                                <h2 class="mb-2 font-medium">Do your pre-owned items come in different conditions?</h2>
+
+                                <p class="mb-2">
+                                    Yes, our pre-owned items come in the following conditions:
+                                    <br/>
+                                    Unworn with tags: previously owned but never been used and in original condition.
+                                    This item comes with its original tags.
+                                    <br/>
+
+                                    Unworn: previously owned but never been used and in original condition. This item
+                                    comes without its original tags.
+                                    <br/>
+
+                                    Excellent: previously owned and worn, but like new or with almost no signs of use.
+                                    This item is still in almost perfect condition with no defects.
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <h2 id="accordion-open-heading-7">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-7" aria-expanded="false"
+                                    aria-controls="accordion-open-body-7">
+                                <span class="flex items-center">
+                                    <svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                         viewBox="0 0 20 20"
+                                         xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path></svg>Returns</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-7" class="hidden" aria-labelledby="accordion-open-heading-7">
+                            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                <h2 class="mb-2 font-medium">What is Costume Collected returns policy?</h2>
+
+                                <p class="mb-2">
+                                    We offer a refund on any items returned to us within 14 days of the delivery date, excluding any delivery costs. You can use our Free Collection service to return any unwanted items.
+                                    <br/>
+                                    If you have used cryptocurrency to pay for your order and you wish to return the items for a refund, you can follow the return procedure outlined below within 30 days from the date you placed your order. Once your return has been accepted by our brand or partner boutique, your refund will be processed by TripleA in the original cryptocurrency at the current exchange rate.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <h2 id="accordion-open-heading-8">
+                            <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 bg-white dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-open-body-8" aria-expanded="false"
+                                    aria-controls="accordion-open-body-8">
+                                <span class="flex items-center">
+                                    <svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                         viewBox="0 0 20 20"
+                                         xmlns="http://www.w3.org/2000/svg"><path
+                                            fill-rule="evenodd"
+                                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                            clip-rule="evenodd"></path></svg>Prebooking</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-open-body-8" class="hidden" aria-labelledby="accordion-open-heading-8">
+                            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                <h2 class="mb-2 font-medium">
+                                    What does pre-order mean?</h2>
+
+                                <p class="mb-2">
+                                    You can get early access to next season's most wanted pieces before they're released.
+                                </p>
+
+                                <h2 class="mb-2 font-medium">
+                                    When do I have to pay?</h2>
+
+                                <p class="mb-2">
+                                    Pre-order items require full payment at checkout.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section || END -->
+</main>
+<!-- Main Content || END -->
+
+<!-- Footer Section || START -->
+<div class="footer">
+    <div class="inner-footer flex justify-between">
+
+        <!--  for company name and description -->
+        <div class="w-1/3">
+            <div class="footer-items">
+                <a href="#">
+                    <img style="height: 112px; width: auto;" class="header_logo"
+                         src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
+                </a>
+
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nieuwe Hemweg 7G AMSTERDAM</li>
+                    <li style="margin-bottom: 2rem">
+                        <i class="fa-solid fa-clock"></i>Thursday to
+                        Sunday from 10:00 to 17:30
+                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+31 (0) 20 6249066</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                </ul>
+
+                <!--   for social links -->
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="w-2/3 flex justify-between">
+            <!--  for quick links  -->
+            <div class="footer-items w-1/3">
+                <h3>OTHERS</h3>
+                <div class="border1"></div> <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>Faq</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for some other links -->
+            <div class="footer-items w-1/3">
+                <h3>ABOUT</h3>
+                <div class="border1"></div>  <!--for the underline -->
+                <ul>
+                    <a href="#">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>Portfolio</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for contact us info -->
+            <div class="footer-items w-1/3">
+                <h3>INFORMATION</h3>
+                <div class="border1"></div>
+                <ul>
+                    <a href="#">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms of service</li>
+                    </a>
+                    <a href="#">
+                        <li>Disclaimer</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+        © Copyright 2023 COSTUME COLLECTED Limited. All rights reserved.
+    </div>
+</div>
+<!-- Footer Section || END -->
+
+<!--Flowbite Js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+</html>
