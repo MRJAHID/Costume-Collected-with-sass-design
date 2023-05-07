@@ -1,0 +1,62 @@
+.article-section {
+  z-index: 1;
+  position: relative;
+
+  .c-article {
+    margin-bottom: 96px;
+
+    .c-title-generic-article {
+      text-align: center;
+
+      .title {
+        width: 100%;
+
+        h1 {
+          padding: 48px 95px 24px 95px !important;
+          margin: 0;
+          font-size: 2.2rem;
+          line-height: 1;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+
+      .content-date {
+        text-align: center !important;
+
+        h3 {
+          margin-bottom: 0;
+          font-size: 1.1rem;
+          line-height: 1.375;
+          text-transform: uppercase;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .c-image {
+      height: 411px;
+      width: 730px;
+      display: block;
+      background-color: transparent;
+      overflow: hidden;
+      margin-top: 48px;
+    }
+
+    .text-content {
+      padding: 0 170px;
+      word-wrap: break-word;
+
+      p:first-child {
+        padding-top: 96px;
+      }
+
+      p {
+        padding: 12px 0;
+        margin: 0;
+        line-height: 1.7;
+
+      }
+    }
+  }
+}
