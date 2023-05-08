@@ -20,7 +20,6 @@
 
         &:hover {
           background-color: $primary-color-ash;
-          border-color: 1px solid hsla(0, 0%, 100%, 0);
           color: $hover-color;
         }
       }
@@ -46,7 +45,6 @@
 
             &:hover {
               background-color: $primary-color-ash;
-              border-color: 1px solid hsla(0, 0%, 100%, 0);
               color: $hover-color;
             }
           }
@@ -69,9 +67,11 @@
 
             &:hover {
               background-color: $primary-color-ash;
-              border-color: 1px solid hsla(0, 0%, 100%, 0);
               color: $hover-color;
+              font-weight: 500;
             }
+
+
           }
         }
       }
@@ -79,7 +79,6 @@
   }
 
   .header_bottom_section {
-    //height: var(--header-bottom-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,20 +103,107 @@
               height: 100%;
 
               li {
+
+                transition: all 0.4s linear;
+
                 a {
                   display: inline-flex;
                   justify-content: center;
                   align-items: center;
                   border: none;
                   padding: 0 1rem;
+                  position: relative;
 
-                  &:hover {
-                    color: $text-color;
-                  }
 
                   span {
-                    font-weight: 400 !important;
+                    font-weight: 400;
                     color: currentColor;
+
+                    &:hover {
+                      color: $text-color;
+                      font-weight: 500;
+                    }
+                  }
+                }
+
+                &:hover {
+                  .megamenu {
+                    opacity: 1;
+                    visibility: visible;
+                  }
+                }
+
+                .megamenu {
+                  position: absolute;
+                  width: 93vw;
+                  background: #fff;
+                  color: white;
+                  height: auto;
+                  left: 0;
+                  top: 1.5rem;
+                  visibility: hidden;
+                  opacity: 0;
+
+                  .megamenu_wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 2rem;
+
+                    .megamenu_txt {
+                      display: flex;
+                      flex-wrap: wrap;
+
+                      .megamenu_txt_item {
+                        padding: 1rem 0.2rem;
+                        width: 23%;
+                        overflow: hidden;
+
+                        h2 {
+                          padding: 0 0.5rem;
+                          font-size: 1.1rem;
+                          margin-bottom: 1.2rem;
+                          font-weight: normal;
+                          text-transform: uppercase;
+                          line-height: 1;
+                          color: #222;
+                        }
+
+                        ul {
+                          display: flex;
+                          flex-direction: column;
+
+                          li {
+                            a {
+                              padding: 0 0.5rem;
+                              font-size: 1.1rem;
+                              margin-bottom: 0.8rem;
+                              font-weight: normal;
+                              line-height: 1;
+                              color: #222;
+                              transition: text-decoration 0.3s ease;
+
+                              &:hover {
+                                text-decoration: underline;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+
+                    .megamenu_img {
+                      img {
+                        height: 340px;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center top;
+                      }
+
+                      a {
+                        padding: 0;
+                        justify-content: start;
+                      }
+                    }
                   }
                 }
               }
