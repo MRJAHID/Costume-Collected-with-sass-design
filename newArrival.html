@@ -47,7 +47,8 @@
         </ul>
     </section>
 
-    <header class="header container px-2 pb-2 mx-auto">
+    <!-- ------   Header DESKTOP ------ -->
+    <header class="header container hidden md:block  px-2 pb-2 mx-auto">
         <section class="header_top_section">
             <div class="header_hamburger w-1/6">
                 <a href="#">
@@ -60,7 +61,7 @@
                     <li><a href="products.html">SHOP</a></li>
                     <li><a href="blogs.html">BLOG</a></li>
                     <li>
-                        <a href="index.html">
+                        <a href="index.html" class="header_logo_img">
                             <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
                         </a></li>
                     <li><a href="aboutus.html">ABOUT</a></li>
@@ -94,7 +95,7 @@
                 </ul>
             </div>
         </section>
-        <section class="header_bottom_section">
+        <section class="header_bottom_section hidden md:flex">
             <div class="header_bottom_menu_container">
                 <div class="header_bottom_menu">
                     <div class="_eff108">
@@ -192,8 +193,10 @@
                                                 </picture>
                                                 <div class="flex flex-col">
                                                     <small class="pt-1 mb-2 text-gray-900">Spotlight on</small>
-                                                    <a href="#" class="mb-2 uppercase text-gray-900 hover:text-gray-500" >LOAFERS</a>
-                                                    <a class="mb-2 text-gray-900 hover:text-gray-500" href="#" style="text-decoration: underline">Shop Now</a>
+                                                    <a href="#"
+                                                       class="mb-2 uppercase text-gray-900 hover:text-gray-500">LOAFERS</a>
+                                                    <a class="mb-2 text-gray-900 hover:text-gray-500" href="#"
+                                                       style="text-decoration: underline">Shop Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -429,6 +432,45 @@
             </div>
         </section>
     </header>
+
+    <!-- ------   Header MOBILE ------ -->
+    <header class="header_mobile container px-4 py-4 mx-auto md:hidden">
+        <section class="header_mobile_container flex justify-between items-center">
+            <!--      left Icons  -->
+            <div class="flex w-1/3">
+                <div class="">
+                    <a href="#">
+                        <i class="fa-solid fa-bars  fa-lg"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <!--     Logo  -->
+            <div class="w-1/3">
+                <a href="index.html" class="headermobile_logo_img">
+                    <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                </a>
+            </div>
+
+            <!--   Right Icons  -->
+            <div class="flex justify-end w-1/3">
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-regular fa-heart  fa-lg"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
 </section>
 <!-- Header || END -->
 
@@ -439,234 +481,234 @@
         <div class="newArrival">
             <div class="newArrival_container">
 
-                <div class="newArrival_filters">
+<!--                <div class="newArrival_filters">-->
 
-                    <!--                New Arrival Filter    -->
-                    <div class="newArrival_filter">
+<!--                    &lt;!&ndash;                New Arrival Filter    &ndash;&gt;-->
+<!--                    <div class="newArrival_filter">-->
 
-                        <div class="newArrival_filter_item">
-                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                                    type="button">Period
-                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"
-                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdown"
-                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton">
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">First</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Second</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Third</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fourth</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<!--                        <div class="newArrival_filter_item">-->
+<!--                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"-->
+<!--                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"-->
+<!--                                    type="button">Period-->
+<!--                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"-->
+<!--                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                          d="M19 9l-7 7-7-7"></path>-->
+<!--                                </svg>-->
+<!--                            </button>-->
+<!--                            &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+<!--                            <div id="dropdown"-->
+<!--                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">-->
+<!--                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"-->
+<!--                                    aria-labelledby="dropdownDefaultButton">-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">First</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Second</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Third</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fourth</a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                        <div class="newArrival_filter_item">
-                            <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2"
-                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                                    type="button">Sex
-                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"
-                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdown2"
-                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton2">
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Male</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Female</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Others</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fourth</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<!--                        <div class="newArrival_filter_item">-->
+<!--                            <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2"-->
+<!--                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"-->
+<!--                                    type="button">Sex-->
+<!--                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"-->
+<!--                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                          d="M19 9l-7 7-7-7"></path>-->
+<!--                                </svg>-->
+<!--                            </button>-->
+<!--                            &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+<!--                            <div id="dropdown2"-->
+<!--                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">-->
+<!--                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"-->
+<!--                                    aria-labelledby="dropdownDefaultButton2">-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Male</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Female</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Others</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fourth</a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                        <div class="newArrival_filter_item">
-                            <button id="dropdownDefaultButton3" data-dropdown-toggle="dropdown3"
-                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                                    type="button">Size
-                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"
-                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdown3"
-                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton3">
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">XS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">X</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">XL</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">L</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<!--                        <div class="newArrival_filter_item">-->
+<!--                            <button id="dropdownDefaultButton3" data-dropdown-toggle="dropdown3"-->
+<!--                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"-->
+<!--                                    type="button">Size-->
+<!--                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"-->
+<!--                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                          d="M19 9l-7 7-7-7"></path>-->
+<!--                                </svg>-->
+<!--                            </button>-->
+<!--                            &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+<!--                            <div id="dropdown3"-->
+<!--                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">-->
+<!--                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"-->
+<!--                                    aria-labelledby="dropdownDefaultButton3">-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">XS</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">X</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">XL</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">L</a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                        <div class="newArrival_filter_item">
-                            <button id="dropdownDefaultButton4" data-dropdown-toggle="dropdown4"
-                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                                    type="button">Color
-                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"
-                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdown4"
-                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton4">
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Green</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blue</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Green</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yellow</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Black</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<!--                        <div class="newArrival_filter_item">-->
+<!--                            <button id="dropdownDefaultButton4" data-dropdown-toggle="dropdown4"-->
+<!--                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"-->
+<!--                                    type="button">Color-->
+<!--                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"-->
+<!--                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                          d="M19 9l-7 7-7-7"></path>-->
+<!--                                </svg>-->
+<!--                            </button>-->
+<!--                            &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+<!--                            <div id="dropdown4"-->
+<!--                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">-->
+<!--                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"-->
+<!--                                    aria-labelledby="dropdownDefaultButton4">-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Green</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blue</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Green</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yellow</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Black</a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                        <div class="newArrival_filter_item">
-                            <button id="dropdownDefaultButton5" data-dropdown-toggle="dropdown5"
-                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                                    type="button">Price Range
-                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"
-                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdown5"
-                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton5">
+<!--                        <div class="newArrival_filter_item">-->
+<!--                            <button id="dropdownDefaultButton5" data-dropdown-toggle="dropdown5"-->
+<!--                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"-->
+<!--                                    type="button">Price Range-->
+<!--                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"-->
+<!--                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                          d="M19 9l-7 7-7-7"></path>-->
+<!--                                </svg>-->
+<!--                            </button>-->
+<!--                            &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+<!--                            <div id="dropdown5"-->
+<!--                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">-->
+<!--                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"-->
+<!--                                    aria-labelledby="dropdownDefaultButton5">-->
 
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:
-                                            Low to High</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:
-                                            High to Low </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:-->
+<!--                                            Low to High</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:-->
+<!--                                            High to Low </a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                        <div class="newArrival_filter_item">
-                            <button id="dropdownDefaultButton6" data-dropdown-toggle="dropdown6"
-                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                                    type="button">Start Date
-                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"
-                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdown6"
-                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton6">
+<!--                        <div class="newArrival_filter_item">-->
+<!--                            <button id="dropdownDefaultButton6" data-dropdown-toggle="dropdown6"-->
+<!--                                    class="text-gray-700 border border-gray-400 hover:bg-gray-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"-->
+<!--                                    type="button">Start Date-->
+<!--                                <svg class="w-4 h-4 ml-12" aria-hidden="true" fill="none" stroke="currentColor"-->
+<!--                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                          d="M19 9l-7 7-7-7"></path>-->
+<!--                                </svg>-->
+<!--                            </button>-->
+<!--                            &lt;!&ndash; Dropdown menu &ndash;&gt;-->
+<!--                            <div id="dropdown6"-->
+<!--                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">-->
+<!--                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"-->
+<!--                                    aria-labelledby="dropdownDefaultButton6">-->
 
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:
-                                            Low to High</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:
-                                            High to Low </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:-->
+<!--                                            Low to High</a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#"-->
+<!--                                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price:-->
+<!--                                            High to Low </a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
 
-                    </div>
+<!--                    </div>-->
 
-                    <!--                New Arrival Search    -->
-                    <div class="newArrival_search mt-4">
+<!--                    &lt;!&ndash;                New Arrival Search    &ndash;&gt;-->
+<!--                    <div class="newArrival_search mt-4">-->
 
-                        <form class="md:w-1/3">
-                            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
-                            <div class="relative">
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                                </div>
-                                <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 " placeholder="Type Keyword" required>
-                                <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
-                            </div>
-                        </form>
+<!--                        <form class="md:w-1/3">-->
+<!--                            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>-->
+<!--                            <div class="relative">-->
+<!--                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">-->
+<!--                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>-->
+<!--                                </div>-->
+<!--                                <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 " placeholder="Type Keyword" required>-->
+<!--                                <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>-->
+<!--                            </div>-->
+<!--                        </form>-->
 
-                    </div>
-                </div>
+<!--                    </div>-->
+<!--                </div>-->
 
                 <!--                New Arrival Products    -->
                 <div class="newArrival_products">
