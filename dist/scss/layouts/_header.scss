@@ -48,6 +48,12 @@
               color: $hover-color;
             }
           }
+
+          a.header_logo_img {
+            &:hover {
+              background-color: transparent;
+            }
+          }
         }
       }
     }
@@ -79,7 +85,6 @@
   }
 
   .header_bottom_section {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -253,4 +258,15 @@
     }
   }
 
+}
+
+.header_mobile {
+  .header_mobile_container {
+    .headermobile_logo_img {
+      img {
+        width: 130px;
+        height: auto;
+      }
+    }
+  }
 }
