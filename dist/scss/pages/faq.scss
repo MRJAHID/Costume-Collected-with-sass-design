@@ -5,9 +5,16 @@
   }
 
   .helpContact {
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      padding-top: 2rem;
+
+    }
   }
 
   .footerPageMenu-leftmenu {
