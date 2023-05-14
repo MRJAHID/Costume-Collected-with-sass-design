@@ -16,8 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
           rel="stylesheet">
-    <!-- Tailwind Css Pack -->
-    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -27,8 +25,11 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
     <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
 
-    <!--    Flowbite Js -->
+    <!--        Flowbite css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet"/>
+
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
 
     <!-- Main Css -->
     <link rel="stylesheet" href="./dist/css/index.css"/>
@@ -47,7 +48,8 @@
         </ul>
     </section>
 
-    <header class="header container px-2 pb-2 mx-auto">
+    <!-- ------   Header DESKTOP ------ -->
+    <header class="header container hidden md:block  px-2 pb-2 mx-auto">
         <section class="header_top_section">
             <div class="header_hamburger w-1/6">
                 <a href="#">
@@ -60,7 +62,7 @@
                     <li><a href="products.html">SHOP</a></li>
                     <li><a href="blogs.html">BLOG</a></li>
                     <li>
-                        <a href="index.html">
+                        <a href="index.html" class="header_logo_img">
                             <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
                         </a></li>
                     <li><a href="aboutus.html">ABOUT</a></li>
@@ -94,7 +96,7 @@
                 </ul>
             </div>
         </section>
-        <section class="header_bottom_section">
+        <section class="header_bottom_section hidden md:flex">
             <div class="header_bottom_menu_container">
                 <div class="header_bottom_menu">
                     <div class="_eff108">
@@ -192,8 +194,10 @@
                                                 </picture>
                                                 <div class="flex flex-col">
                                                     <small class="pt-1 mb-2 text-gray-900">Spotlight on</small>
-                                                    <a href="#" class="mb-2 uppercase text-gray-900 hover:text-gray-500" >LOAFERS</a>
-                                                    <a class="mb-2 text-gray-900 hover:text-gray-500" href="#" style="text-decoration: underline">Shop Now</a>
+                                                    <a href="#"
+                                                       class="mb-2 uppercase text-gray-900 hover:text-gray-500">LOAFERS</a>
+                                                    <a class="mb-2 text-gray-900 hover:text-gray-500" href="#"
+                                                       style="text-decoration: underline">Shop Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -429,6 +433,45 @@
             </div>
         </section>
     </header>
+
+    <!-- ------   Header MOBILE ------ -->
+    <header class="header_mobile container px-4 py-4 mx-auto md:hidden">
+        <section class="header_mobile_container flex justify-between items-center">
+            <!--      left Icons  -->
+            <div class="flex w-1/3">
+                <div class="">
+                    <a href="#">
+                        <i class="fa-solid fa-bars  fa-lg"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <!--     Logo  -->
+            <div class="w-1/3">
+                <a href="index.html" class="headermobile_logo_img">
+                    <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                </a>
+            </div>
+
+            <!--   Right Icons  -->
+            <div class="flex justify-end w-1/3">
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-regular fa-heart  fa-lg"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
 </section>
 <!-- Header || END -->
 
@@ -622,7 +665,7 @@
                         <h2>Get in touch with our Communications team</h2>
                     </div>
                     <div class="flex flex-wrap">
-                        <div class="col">
+                        <div class="col mb-4">
                             <div class="flex flex-wrap mx-0 text-center profile-info">
                                 <div class="w-full text-center jq_get-name">Susannah Clark</div>
 
@@ -633,7 +676,7 @@
                         </div>
 
 
-                        <div class="col">
+                        <div class="col mb-4">
                             <div class="flex flex-wrap mx-0 text-center profile-info">
                                 <div class="w-full text-center jq_get-name">COSTUME COLLECTED</div>
 
@@ -661,7 +704,7 @@
             <section class="onword-section">
                 <div class="container mx-auto px-2">
                     <div class="flex flex-wrap">
-                        <div class="w-1/3 responsive-space">
+                        <div class="w-full md:w-1/3 responsive-space">
 
                             <a class="cards" href="#">
 
@@ -677,7 +720,7 @@
                             </a>
 
                         </div>
-                        <div class="w-1/3 responsive-space">
+                        <div class="w-full md:w-1/3 responsive-space">
 
                             <a class="cards" href="#">
 
@@ -694,7 +737,7 @@
                             </a>
 
                         </div>
-                        <div class="w-1/3 responsive-space">
+                        <div class="w-full md:w-1/3 responsive-space">
 
                             <a class="cards" href="#">
 
@@ -720,16 +763,11 @@
 
 <!-- Footer Section || START -->
 <div class="footer">
-    <div class="inner-footer flex justify-between">
+    <div class="inner-footer flex-col flex md:flex-row justify-between">
 
         <!--  for company name and description -->
-        <div class="w-1/3">
+        <div class="w-full md:w-1/4 mb-4 md:mb-0">
             <div class="footer-items">
-                <a href="#">
-                    <img style="height: 112px; width: auto;" class="header_logo"
-                         src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
-                </a>
-
                 <ul>
                     <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nieuwe Hemweg 7G AMSTERDAM</li>
                     <li style="margin-bottom: 2rem">
@@ -748,45 +786,47 @@
                 </div>
             </div>
         </div>
-        <div class="w-2/3 flex justify-between">
-            <!--  for quick links  -->
+
+        <div class="w-full md:w-2/4 mb-4 md:mb-0 px-4 flex justify-between">
+            <!--  for Main links  -->
             <div class="footer-items w-1/3">
-                <h3>OTHERS</h3>
+                <h3>MAIN</h3>
                 <div class="border1"></div> <!--for the underline -->
                 <ul>
-                    <a href="#">
+                    <a href="index.html">
                         <li>Home</li>
                     </a>
-                    <a href="#">
+                    <a href="products.html">
                         <li>Shop</li>
                     </a>
-                    <a href="#">
+                    <a href="contactus.html">
+                        <li>Blog</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <!--  for ABout links -->
+            <div class="footer-items w-1/3">
+                <h3>ABOUT</h3>
+                <div class="border1"></div>  <!--for the underline -->
+                <ul>
+                    <a href="aboutus.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="contactus.html">
                         <li>Contact</li>
                     </a>
-                    <a href="#">
+                    <a href="portfolios.html">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="faq.html">
                         <li>Faq</li>
                     </a>
                 </ul>
             </div>
 
-            <!--  for some other links -->
-            <div class="footer-items w-1/3">
-                <h3>ABOUT</h3>
-                <div class="border1"></div>  <!--for the underline -->
-                <ul>
-                    <a href="#">
-                        <li>About Us</li>
-                    </a>
-                    <a href="#">
-                        <li>Blog</li>
-                    </a>
-                    <a href="#">
-                        <li>Portfolio</li>
-                    </a>
-                </ul>
-            </div>
-
-            <!--  for contact us info -->
+            <!--  for information info -->
             <div class="footer-items w-1/3">
                 <h3>INFORMATION</h3>
                 <div class="border1"></div>
@@ -803,11 +843,55 @@
                 </ul>
             </div>
         </div>
+
+        <div class="w-full md:w-1/4  mb-4 md:mb-0">
+            <form>
+                <div class="mb-6">
+                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-100 dark:text-white">Select
+                        Country</label>
+                    <select id="countries"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
+                        <option selected>Choose a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="language" class="block mb-2 text-sm font-medium text-gray-100 dark:text-white">Select
+                        Language</label>
+                    <select id="language"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option selected>English</option>
+                        <option value="US">Spanish</option>
+                        <option value="CA">Arabic</option>
+                        <option value="FR">Bengali</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+
+                <label class="block mb-2 text-sm font-normal text-gray-300 dark:text-white">Newsletter Signup</label>
+
+                <button type="submit"
+                        class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-400 border border-gray-300  font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">
+                    Sign up here
+                </button>
+            </form>
+        </div>
     </div>
 
     <!--   Footer Bottom start  -->
     <div class="footer-bottom">
         © Copyright 2023 COSTUME COLLECTED Limited. All rights reserved.
+    </div>
+
+    <!--  Footer Bottom Logo  -->
+    <div class="py-2">
+        <a href="#">
+            <img style="height: 112px; width: auto;" class="header_logo mx-auto"
+                 src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
+        </a>
     </div>
 </div>
 <!-- Footer Section || END -->

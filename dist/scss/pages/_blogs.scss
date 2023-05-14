@@ -21,9 +21,13 @@
 
   .card-columns{
     column-gap: 30px;
-    column-count: 3;
+    column-count: 1;
     orphans: 1;
     widows: 1;
+
+    @media (min-width: 768px) {
+      column-count: 3;
+    }
   }
 
   .card-columns.news-cards {
