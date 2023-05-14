@@ -1,21 +1,37 @@
 .newsletter {
   .newsletter_container {
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
 
     .newsletter_left {
-      padding: 6px 0.2rem;
+      padding: 6px 1rem;
+      margin-bottom: 1rem;
+
+      @media (min-width: 768px) {
+        padding: 6px 0.2rem;
+      }
 
       h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
         line-height: 1;
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 0.8rem;
+
+        @media (min-width: 768px) {
+          font-size: 2rem;
+        }
       }
 
     }
 
     .newsletter_right {
+      margin-bottom: 1rem;
+
       padding: 6px 2rem;
 
       .newsletter_form {
@@ -47,13 +63,14 @@
             width: 100%;
           }
         }
-        .newsletter_form_btn{
+
+        .newsletter_form_btn {
           flex-wrap: nowrap;
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
 
-          button{
+          button {
             font-size: 1rem;
             line-height: 1;
             position: relative;
@@ -66,11 +83,11 @@
             font-weight: 600;
             text-decoration: none;
             background-color: #222;
-            border: 1px solid hsla(0,0%,100%,0);
+            border: 1px solid hsla(0, 0%, 100%, 0);
             color: #fff;
-            transition-property: background-color,border-color,opacity,color;
+            transition-property: background-color, border-color, opacity, color;
             transition-duration: 300ms;
-            transition-timing-function: cubic-bezier(0,0,0,1);
+            transition-timing-function: cubic-bezier(0, 0, 0, 1);
             min-height: 3rem;
             min-width: 3rem;
             padding: 1rem;
@@ -78,7 +95,7 @@
 
             &:hover {
               background-color: $hover-color;
-              border: 1px solid hsla(0,0%,100%,0);
+              border: 1px solid hsla(0, 0%, 100%, 0);
               color: #fff;
             }
           }
