@@ -117,33 +117,37 @@
       list-style: square;
       padding-left: 1.1rem;
     }
+
     .ltr-1tp1224 li {
       list-style: square;
       padding-left: 0.6rem;
     }
+
     .ltr-1kby4wd-Body {
       font-size: 1.1rem;
       line-height: 1.35;
       background-color: transparent;
       cursor: pointer;
-      transition-property: color,text-decoration;
+      transition-property: color, text-decoration;
       transition-duration: 150ms;
-      transition-timing-function: cubic-bezier(0.66,0,0.2,1);
+      transition-timing-function: cubic-bezier(0.66, 0, 0.2, 1);
       text-decoration: underline;
       color: #222;
     }
 
-  //
+    //
     .ltr-cq35i5 {
       display: grid;
       grid-template-areas: 'first second third';
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       column-gap: 5rem;
       grid-template-rows: auto 1fr;
     }
+
     .ltr-182wjbq {
       grid-area: first;
     }
+
     .ltr-13pqkh2 {
       flex-direction: column;
       gap: 2rem;
@@ -151,17 +155,20 @@
       flex-wrap: nowrap;
       margin-bottom: 2rem;
     }
+
     .ltr-50vqd3-Heading-HeadingBold {
       font-family: 'Jost', sans-serif;
       font-size: 1.4rem;
       line-height: 1.276;
       font-weight: 500;
     }
+
     .ltr-4y8w0i-Body {
       font-family: 'Jost', sans-serif;
       font-size: 1rem;
       line-height: 1.36;
     }
+
     .ltr-fzg9du {
 
       flex-direction: column;
@@ -169,30 +176,37 @@
       display: flex;
       flex-wrap: nowrap;
     }
+
     .ltr-fzg9du ul {
       padding-left: 1.2rem;
     }
+
     .ltr-fzg9du li {
       list-style: square;
       padding-left: 0.7rem;
     }
+
     .ltr-15eja7h {
       grid-area: second;
     }
+
     .ltr-1o3tari {
       grid-area: third;
     }
+
     .ltr-92qs1a {
       flex-direction: column;
       gap: 0.6rem;
       display: flex;
       flex-wrap: nowrap;
     }
+
     .ltr-jno634 {
       position: relative;
       outline-offset: 0.2rem;
       width: 100%;
     }
+
     .ltr-1ymlzfk {
       position: relative;
       max-width: 100%;
@@ -201,6 +215,7 @@
       transition-delay: 150ms;
       overflow: hidden;
     }
+
     .ltr-1ymlzfk > img {
       position: absolute;
       top: 0px;
@@ -208,13 +223,26 @@
       width: 100%;
       height: 100%;
     }
+
     .ltr-1w2up3s[src], .ltr-1w2up3s[srcset] {
       visibility: visible;
     }
-    .ltr-vcsfaw-Body-BodyBold{
+
+    .ltr-vcsfaw-Body-BodyBold {
       font-size: 1rem;
       line-height: 1.3;
       font-weight: 500;
     }
+  }
+}
+
+.image-viewer {
+  width: 400px;
+  height: 400px;
+  cursor: crosshair;
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 }

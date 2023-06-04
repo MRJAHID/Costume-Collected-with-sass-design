@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Costume Collected</title>
+    <!-- Favicon -->
+    <link
+            rel="icon"
+            href="./dist/images/costumescollected merge zwart wit.png"
+            sizes="any"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
+          rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+
+    <!--        Flowbite css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet"/>
+
+    <!-- jsCalendar Javascript and CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.4/source/jsCalendar.min.js"
+            integrity="sha384-0LaRLH/U5g8eCAwewLGQRyC/O+g0kXh8P+5pWpzijxwYczD3nKETIqUyhuA8B/UB"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.4/source/jsCalendar.min.css"
+          integrity="sha384-44GnAqZy9yUojzFPjdcUpP822DGm1ebORKY8pe6TkHuqJ038FANyfBYBpRvw8O9w" crossorigin="anonymous">
+
+
+    <!-- Tailwind Css Pack -->
+    <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/css/index.css"/>
+</head>
+<body class="antialiased">
+<!-- Header || START -->
+<section>
+    <section class="top_header">
+        <ul class="top_header-inner">
+            <li>
+                    <span>
+                    <a target="#"
+                       href="#" class="">Incoming | Shop the latest arrivals here</a>
+                    </span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ------   Header DESKTOP ------ -->
+    <header class="header container hidden md:block  px-2 pb-2 mx-auto">
+        <section class="header_top_section">
+            <div class="header_topmenu w-2/6">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li><a href="blogs.html">BLOG</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="header_topmenu w-2/6">
+                <ul style="justify-content: center">
+                    <li>
+                        <a href="index.html" class="header_logo_img">
+                            <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header_icons w-2/6">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="wishlist.html">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="checkout.html">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header_bottom_section hidden md:flex">
+            <div class="header_bottom_menu_container">
+                <div class="header_bottom_menu">
+                    <div class="_eff108">
+                        <nav class="header_bottom_menu_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Themes</span>
+                                    </a>
+
+                                    <!--     Mega Menu   -->
+                                    <div class="megamenu">
+                                        <div class="megamenu_wrapper">
+                                            <div class="megamenu_txt w-3/4 pr-4">
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>SNEAKERS</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">New in sneakers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">All sneakers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">High Top</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Low</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Athletic sneakers</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>ICONIC COLLECTION</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">McQueen Oversized</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Alexander Sneaker</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Gucci Ace</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Nike Jordan</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Balenciaga Triple S</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Alexander Sneaker</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Gucci Ace</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Nike Jordan</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>Our Sustainable Services</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Sell Designer Bags</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Clear out your closet</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Sustainability about Costume Collected</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="megamenu_img w-1/4">
+                                                <picture class="mb-2">
+                                                    <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/4554400/data/8c8b394500815ee3a22285cf4410096d/3x4_three-columns/480/data.jpeg"
+                                                         alt=""/>
+                                                </picture>
+                                                <div class="flex flex-col">
+                                                    <small class="pt-1 mb-2 text-gray-900">Spotlight on</small>
+                                                    <a href="#"
+                                                       class="mb-2 uppercase text-gray-900 hover:text-gray-500">LOAFERS</a>
+                                                    <a class="mb-2 text-gray-900 hover:text-gray-500" href="#"
+                                                       style="text-decoration: underline">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Clothing</span>
+                                    </a>
+
+                                    <!--     Mega Menu   -->
+                                    <div class="megamenu">
+                                        <div class="megamenu_wrapper">
+                                            <div class="megamenu_txt w-3/4 pr-4">
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>SNEAKERS</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">New in sneakers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">All sneakers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">High Top</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Low</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Athletic sneakers</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>ICONIC COLLECTION</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">McQueen Oversized</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Alexander Sneaker</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Gucci Ace</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Nike Jordan</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Balenciaga Triple S</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Alexander Sneaker</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Gucci Ace</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Nike Jordan</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>Our Sustainable Services</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Sell Designer Bags</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Clear out your closet</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Sustainability about Costume Collected</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="megamenu_img w-1/4">
+                                                <picture>
+                                                    <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/4554400/data/8c8b394500815ee3a22285cf4410096d/3x4_three-columns/480/data.jpeg"
+                                                         alt=""/>
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Shoes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Bags</span>
+                                    </a>
+
+                                    <!--     Mega Menu   -->
+                                    <div class="megamenu">
+                                        <div class="megamenu_wrapper">
+                                            <div class="megamenu_txt w-3/4 pr-4">
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>SNEAKERS</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">New in sneakers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">All sneakers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">High Top</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Low</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Athletic sneakers</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>ICONIC COLLECTION</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">McQueen Oversized</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Alexander Sneaker</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Gucci Ace</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Nike Jordan</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Balenciaga Triple S</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Alexander Sneaker</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Gucci Ace</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Nike Jordan</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="megamenu_txt_item">
+                                                    <div>
+                                                        <h2>Our Sustainable Services</h2>
+                                                    </div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Sell Designer Bags</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Clear out your closet</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Sustainability about Costume Collected</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="megamenu_img w-1/4">
+                                                <picture>
+                                                    <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/4554400/data/8c8b394500815ee3a22285cf4410096d/3x4_three-columns/480/data.jpeg"
+                                                         alt=""/>
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Accessories</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="_dc463b">Fabrics</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom_search">
+                <div class="header_bottom_search_container">
+                    <form action="" class="header_bottom_search_form" role="search">
+                        <input aria-expanded="false"
+                               aria-label="Search."
+                               autocapitalize="off"
+                               autocomplete="off" autocorrect="off"
+                               class="" id="search"
+                               maxlength="100" name="q"
+                               placeholder="Search"
+                               spellcheck="false" type="search"
+                               required="" value=""/>
+                        <button aria-label="Search." type="submit"
+                                class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- ------   Header MOBILE ------ -->
+    <header class="header_mobile container px-4 py-4 mx-auto md:hidden">
+        <section class="header_mobile_container flex justify-between items-center">
+            <!--      left Icons  -->
+            <div class="flex w-1/3">
+                <div class="nav-mobile">
+                    <a href="#" class="mobile_nav_bar">
+                        <i class="fa-solid fa-bars  fa-lg"></i>
+                    </a>
+                    <!--    Mobile Menu -->
+                    <ul class="menu-sidebar">
+                        <li>
+                            <label class="submenu-label">Women's Homepage</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-one" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-one">New In</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-one">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-two" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-two">Shop By</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-two">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-three" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-three">Brands</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-three">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-four" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-four">Clothing</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-four">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-five" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-five">Accessories</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-five">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-six" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-six">Homeware</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-six">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-seven" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-seven">Pre-Owned</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-seven">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <!--     Logo  -->
+            <div class="w-1/3">
+                <a href="index.html" class="headermobile_logo_img">
+                    <img class="header_logo" src="./dist/images/costumescollected.png" alt="Logo"/>
+                </a>
+            </div>
+
+            <!--   Right Icons  -->
+            <div class="flex justify-end w-1/3">
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-regular fa-heart  fa-lg"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="ml-4" href="#">
+                        <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+</section>
+<!-- Header || END -->
+
+<!-- Main Content || START -->
+<main class="py-12">
+    <div class="checkout container mx-auto px-2">
+
+        <div class="ltr-1n0ec7f e1li1ogk0 px-2 md:px-12">
+            <div class="ltr-ghj87x e1e8ldf00">
+                <h1 class="ltr-xr5yry-Display ehu26aw0">
+                    Shopping Bag</h1>
+            </div>
+            <a href="#" class="ltr-1i7kjl9-Footnote">Continue Shopping</a>
+        </div>
+
+        <div class="_a8f651">
+            <!--      Left Side       -->
+            <div class="_a57d8d">
+                <ul>
+                    <li class="_b632f1">
+                        <div class="_e179ee">
+                        </div>
+                        <ul class="_c92854">
+                            <li class="_f9e55c">
+                                <div class="_e73fa1">
+                                    <div class="_e55f4e">
+                                        <div class="_c7b82c">
+                                            <a href="#" class="ltr-4y8w0i-Body">
+                                                <picture>
+                                                    <source media="(min-width: 170px)"
+                                                            srcset="https://cdn-images.farfetch-contents.com/20/26/84/72/20268472_50331301_170.jpg">
+                                                    <img src="https://cdn-images.farfetch-contents.com/20/26/84/72/20268472_50331301_170.jpg"
+                                                         title="Interlocking G-logo plaque sunglasses"
+                                                         alt="Interlocking G-logo plaque sunglasses"
+                                                         data-testid="item-image"></picture>
+                                            </a></div>
+                                    </div>
+                                    <div class="_cfd662">
+                                        <div class="_b825c7">
+                                            <a href="#" class="e1hvsev21 ltr-1julgq8-Body">Gucci Eyewear</a>
+                                            <a
+                                                    href="#"
+                                                    class="e1hvsev20 ltr-1kebjs9-Body">Interlocking G-logo plaque
+                                                sunglasses</a>
+                                            <p class="_b1d204 ltr-1gp3mca-Footnote">
+                                                <span>FARFETCH ID:&nbsp;</span><span>20268472</span>
+                                            </p>
+                                        </div>
+
+
+                                        <div class="_da9a3f">
+                                            <div class="ltr-1nvb3i5">
+                                                <p class="font-medium text-lg">
+                                                    $860</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="_d8bf01">
+                                            <div>
+                                                <div class="_f00d5a mb-4">Size</p>
+                                                    <div class="_a6a9c9 my-1">
+                                                        <span class="_b2604a ltr-2pfgen-Body-BodyBold font-medium">One Size </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="_eb96b5">
+                                                <p class="ltr-1ubfewr-Body eavjcfb4">Quantity</p>
+                                                <div class="_a6a9c9">
+                                                    <span class="_b2604a ltr-2pfgen-Body-BodyBold font-medium">1</span>
+                                                    <button class="_bd0d04 ltr-1i7kjl9-Footnote">Change
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!--    Right Side  -->
+            <aside role="none" class="_ff9482">
+                <div>
+                    <div class="_fbd685">
+                        <div class="_becb76">
+                            <h2 class="ltr-agm80e-Heading e993tv53">Summary</h2>
+                            <div class="ltr-l40ypq e993tv52">
+                                <p role="paragraph" class="ltr-1eoy87d eqr5eq31">
+                                    <span class="ltr-4y8w0i-Body">Subtotal</span><span
+                                        class="ltr-isgvpc eqr5eq30"><span>$860.00</span></span>
+                                </p>
+                                <p role="paragraph" class="ltr-1eoy87d eqr5eq31"><span
+                                        class="ltr-4y8w0i-Body">Delivery</span><span
+                                        class="ltr-isgvpc eqr5eq30"><span>$24.00</span></span></p>
+                                <hr aria-hidden="true" class="ltr-1y1zdsy e993tv54">
+                                <p role="paragraph" class="ltr-1soajkb e993tv51 flex justify-between"><span
+                                        class="ltr-2pfgen-Body-BodyBold">Total</span><span
+                                        class="ltr-isgvpc e993tv50"><span>USD <span
+                                        class="ltr-2pfgen-Body-BodyBold">$884.00</span></span></span>
+                                </p></div>
+                        </div>
+                        <div class="_ca273d">
+                            <button type="button"
+                                    class="w-full text-white hover:text-gray-800  bg-gray-900 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex justify-center items-center mr-2 mb-2">
+                                Go To Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!--        ------------------      -->
+        <section class="_b61382">
+            <div class="_ee944b">
+                <div class="_a38bcd">
+                    <div class="_ab8480 ltr-15kvush">
+                        <i class="fa-solid fa-boxes-packing fa-lg"></i>
+                    </div>
+                    <p class="_d5fe33">Free global returns collection service</p></div>
+                <p class="_a8cba2">We offer a free returns collection service on all orders
+                    worldwide</p></div>
+            <div class="_ee944b">
+                <div class="_a38bcd">
+                    <div class="_ab8480 ltr-15kvush">
+                        <i class="fa-solid fa-boxes-packing fa-lg"></i>
+                    </div>
+                    <p class="_d5fe33">Upgrade your Access rewards</p></div>
+                <p class="_a8cba2">Every new order takes you one step closer to unlocking
+                    exclusive rewards</p></div>
+            <div class="_ee944b" data-testid="usp">
+                <div class="_a38bcd">
+                    <div class="_ab8480 ltr-15kvush">
+                        <i class="fa-solid fa-boxes-packing fa-lg"></i>
+                    </div>
+                    <p class="_d5fe33">Fast delivery</p></div>
+                <p class="_a8cba2">To your door in no time. Explore F90, Same Day delivery and
+                    Express delivery.</p></div>
+        </section>
+    </div>
+
+    <!-- Products Showcase Section || START -->
+    <section class="container mb-6 px-2 md:px-4 mx-auto mt-12">
+        <div class="product_showcase">
+            <div class="product_showcase_container">
+                <div class="product_showcase_title">
+                    <p>Back in stock: </p>
+                    <a href="products.html" target="_self" class="">Shop Now</a>
+                </div>
+                <div class="product_showcase_content">
+                    <div class="products">
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/dress2.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="singleProduct.html">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/bag2.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="singleProduct.html">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/dress2.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="singleProduct.html">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product_img">
+                                <img src="./dist/images/banner1.png"
+                                     alt=""/>
+                                <span class="heartTip">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                            </div>
+                            <div class="product_text">
+                                <span>Back in stock</span>
+                                <a href="singleProduct.html">Christoper Kane</a>
+                                <p>Full Bloom A-Line Dress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Showcase Section || END -->
+</main>
+<!-- Main Content || END -->
+
+<!-- Footer Section || START -->
+<div class="footer">
+    <div class="inner-footer flex-col flex md:flex-row justify-between">
+
+        <!--  for company name and description -->
+        <div class="w-full md:w-1/4 mb-4 md:mb-0">
+            <div class="footer-items">
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nieuwe Hemweg 7G AMSTERDAM</li>
+                    <li style="margin-bottom: 2rem">
+                        <i class="fa-solid fa-clock"></i>Thursday to
+                        Sunday from 10:00 to 17:30
+                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+31 (0) 20 6249066</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                </ul>
+
+                <!--   for social links -->
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:w-2/4 mb-4 md:mb-0 px-4 flex justify-between">
+            <!--  for Main links  -->
+            <div class="footer-items w-1/3">
+                <h3>MAIN</h3>
+                <div class="border1"></div> <!--for the underline -->
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="products.html">
+                        <li>Shop</li>
+                    </a>
+                    <a href="contactus.html">
+                        <li>Blog</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <!--  for ABout links -->
+            <div class="footer-items w-1/3">
+                <h3>ABOUT</h3>
+                <div class="border1"></div>  <!--for the underline -->
+                <ul>
+                    <a href="aboutus.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="contactus.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="portfolios.html">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="faq.html">
+                        <li>Faq</li>
+                    </a>
+                </ul>
+            </div>
+
+            <!--  for information info -->
+            <div class="footer-items w-1/3">
+                <h3>INFORMATION</h3>
+                <div class="border1"></div>
+                <ul>
+                    <a href="#">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms of service</li>
+                    </a>
+                    <a href="#">
+                        <li>Disclaimer</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/4  mb-4 md:mb-0">
+            <form>
+                <div class="mb-6">
+                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-100 dark:text-white">Select
+                        Country</label>
+                    <select id="countries"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
+                        <option selected>Choose a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="language" class="block mb-2 text-sm font-medium text-gray-100 dark:text-white">Select
+                        Language</label>
+                    <select id="language"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option selected>English</option>
+                        <option value="US">Spanish</option>
+                        <option value="CA">Arabic</option>
+                        <option value="FR">Bengali</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+
+                <label class="block mb-2 text-sm font-normal text-gray-300 dark:text-white">Newsletter Signup</label>
+
+                <button type="submit"
+                        class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-400 border border-gray-300  font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">
+                    Sign up here
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+        © Copyright 2023 COSTUME COLLECTED Limited. All rights reserved.
+    </div>
+
+    <!--  Footer Bottom Logo  -->
+    <div class="py-2">
+        <a href="#">
+            <img style="height: 112px; width: auto;" class="header_logo mx-auto"
+                 src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
+        </a>
+    </div>
+</div>
+<!-- Footer Section || END -->
+
+
+<!-- --------------   SCRIPTS --------------  -->
+<!--    JQuery  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--Flowbite Js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+<!-- Mobile nav -->
+<script>
+    $('.mobile_nav_bar').click(function (evt) {
+        evt.stopPropagation();
+        $('.menu-sidebar').toggleClass('active');
+    });
+
+    $('body,html').click(function (e) {
+        let menucontainer = $(".menu-sidebar");
+
+        if (!menucontainer.is(e.target) && menucontainer.has(e.target).length === 0) {
+            menucontainer.removeClass('active');
+        }
+    });
+</script>
+
+</body>
+</html>

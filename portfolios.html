@@ -28,6 +28,14 @@
     <!--        Flowbite css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet"/>
 
+    <!-- jsCalendar Javascript and CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.4/source/jsCalendar.min.js"
+            integrity="sha384-0LaRLH/U5g8eCAwewLGQRyC/O+g0kXh8P+5pWpzijxwYczD3nKETIqUyhuA8B/UB"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.4/source/jsCalendar.min.css"
+          integrity="sha384-44GnAqZy9yUojzFPjdcUpP822DGm1ebORKY8pe6TkHuqJ038FANyfBYBpRvw8O9w" crossorigin="anonymous">
+
+
     <!-- Tailwind Css Pack -->
     <link href="./dist/css/tailwind/tailwind.css" rel="stylesheet"/>
 
@@ -79,12 +87,12 @@
 
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="wishlist.html">
                             <i class="fa-regular fa-heart"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="checkout.html">
                             <i class="fa-solid fa-bag-shopping"></i>
                         </a>
                     </li>
@@ -434,10 +442,121 @@
         <section class="header_mobile_container flex justify-between items-center">
             <!--      left Icons  -->
             <div class="flex w-1/3">
-                <div class="">
-                    <a href="#">
+                <div class="nav-mobile">
+                    <a href="#" class="mobile_nav_bar">
                         <i class="fa-solid fa-bars  fa-lg"></i>
                     </a>
+                    <!--    Mobile Menu -->
+                    <ul class="menu-sidebar">
+                        <li>
+                            <label class="submenu-label">Women's Homepage</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-one" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-one">New In</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-one">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-two" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-two">Shop By</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-two">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-three" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-three">Brands</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-three">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-four" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-four">Clothing</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-four">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-five" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-five">Accessories</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-five">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-six" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-six">Homeware</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-six">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sub-seven" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-seven">Pre-Owned</label>
+                            <div class="arrow right">&#8250;</div>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-seven">Back</label>
+                                    <div class="arrow left">&#8249;</div>
+                                </li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                                <li><a href="#">Sub-item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <a class="ml-4" href="#">
@@ -891,7 +1010,31 @@
 </div>
 <!-- Footer Section || END -->
 
+
+<!-- --------------   SCRIPTS --------------  -->
+<!--    JQuery  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <!--Flowbite Js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+<!-- Mobile nav -->
+<script>
+    $('.mobile_nav_bar').click(function (evt) {
+        evt.stopPropagation();
+        $('.menu-sidebar').toggleClass('active');
+    });
+
+    $('body,html').click(function (e) {
+        let menucontainer = $(".menu-sidebar");
+
+        if (!menucontainer.is(e.target) && menucontainer.has(e.target).length === 0) {
+            menucontainer.removeClass('active');
+        }
+    });
+</script>
+
 </body>
 </html>
