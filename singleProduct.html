@@ -92,7 +92,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="checkout.html">
+                        <a href="bag.html">
                             <i class="fa-solid fa-bag-shopping"></i>
                         </a>
                     </li>
@@ -594,15 +594,15 @@
 
     <!-- singleProduct  Section || START -->
     <section class="singleProduct container px-2 mx-auto my-8">
-        <div class="singleProduct_container mb-12 flex">
-            <div class="singleProduct_img gallery w-2/3">
-                <div id="example" class="image-viewer flex mx-4 overflow-hidden">
+        <div class="singleProduct_container mb-12 flex flex-col md:flex-row">
+            <div class="singleProduct_img w-full md:w-2/3">
+                <div id="example" class="flex mx-4 overflow-hidden">
                         <img src="https://cdn-images.farfetch-contents.com/18/98/28/60/18982860_50108541_1000.jpg" alt="Product Pic"/>
                         <img src="https://cdn-images.farfetch-contents.com/18/98/28/60/18982860_50108538_1000.jpg" alt="Product Pic"/>
                 </div>
             </div>
 
-            <div class="singleProduct_right w-1/3">
+            <div class="singleProduct_right w-full md:w-1/3">
                 <div class="singleProduct_right_txt px-4 py-5">
                     <a href="#">Represent</a>
                     <p>Initial-print denim jacket</p>
@@ -615,45 +615,15 @@
                         <div style="z-index: 99;" class="mb-4">
                             <div class="flex w-full items-center justify-start">
                                 <!-- component -->
-                                <div x-data="select" class="relative w-[30rem]" @click.outside="open = false">
-                                    <!-- trigger button -->
-                                    <button type="button" @click="toggle"
-                                            class="flex w-full items-center justify-between rounded bg-white p-2 ring-1 ring-gray-300"
-                                            :class="(open) && 'ring-blue-600'">
-                                        <span style="color:#727272;"
-                                              x-text="(language == '') ? ' &nbsp; &nbsp; &nbsp; Select Size (Clothing Standard)&nbsp; &nbsp; &nbsp;' : language"></span>
-                                        <span class="text-2xl w-5 h-5 grid place-content-center"><i
-                                                class='bx bx-chevron-down'></i></span>
-                                    </button>
-
-                                    <!-- list items -->
-                                    <ul class="z-2 absolute mt-2 w-full rounded bg-gray-50 ring-1 ring-gray-300"
-                                        x-show="open">
-                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
-                                            @click="setLanguage('XS')">
-                                            XS
-                                        </li>
-                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
-                                            @click="setLanguage('S')">
-                                            S
-                                        </li>
-                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
-                                            @click="setLanguage('M')">
-                                            M
-                                        </li>
-                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
-                                            @click="setLanguage('L')">
-                                            L
-                                        </li>
-                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
-                                            @click="setLanguage('XL')">
-                                            XL
-                                        </li>
-                                        <li class="cursor-pointer select-none p-2 hover:bg-gray-200"
-                                            @click="setLanguage('XXL')">
-                                            XXL
-                                        </li>
-                                    </ul>
+                                <div class="w-full">
+                                    <select id="countris"
+                                            class="bg-white border border-gray-400 text-gray-900 text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 ">
+                                        <option selected class="text-gray-700">Select Size</option>
+                                        <option value="X">X</option>
+                                        <option value="XL">XL</option>
+                                        <option value="L">L</option>
+                                        <option value="M">M</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -1023,19 +993,14 @@
 </main>
 <!-- Main Content || END -->
 
-<!-- Footer Section || START -->
 
+<!-- Footer Section || START -->
 <div class="footer">
-    <div class="inner-footer flex justify-between">
+    <div class="inner-footer flex-col flex md:flex-row justify-between">
 
         <!--  for company name and description -->
-        <div class="w-1/3">
+        <div class="w-full md:w-1/4 mb-4 md:mb-0">
             <div class="footer-items">
-                <a href="#">
-                    <img style="height: 112px; width: auto;" class="header_logo"
-                         src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
-                </a>
-
                 <ul>
                     <li><i class="fa fa-map-marker" aria-hidden="true"></i>Nieuwe Hemweg 7G AMSTERDAM</li>
                     <li style="margin-bottom: 2rem">
@@ -1054,45 +1019,47 @@
                 </div>
             </div>
         </div>
-        <div class="w-2/3 flex justify-between">
-            <!--  for quick links  -->
+
+        <div class="w-full md:w-2/4 mb-4 md:mb-0 px-4 flex justify-between">
+            <!--  for Main links  -->
             <div class="footer-items w-1/3">
-                <h3>OTHERS</h3>
+                <h3>MAIN</h3>
                 <div class="border1"></div> <!--for the underline -->
                 <ul>
-                    <a href="#">
+                    <a href="index.html">
                         <li>Home</li>
                     </a>
-                    <a href="#">
+                    <a href="products.html">
                         <li>Shop</li>
                     </a>
-                    <a href="#">
+                    <a href="contactus.html">
+                        <li>Blog</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <!--  for ABout links -->
+            <div class="footer-items w-1/3">
+                <h3>ABOUT</h3>
+                <div class="border1"></div>  <!--for the underline -->
+                <ul>
+                    <a href="aboutus.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="contactus.html">
                         <li>Contact</li>
                     </a>
-                    <a href="#">
+                    <a href="portfolios.html">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="faq.html">
                         <li>Faq</li>
                     </a>
                 </ul>
             </div>
 
-            <!--  for some other links -->
-            <div class="footer-items w-1/3">
-                <h3>ABOUT</h3>
-                <div class="border1"></div>  <!--for the underline -->
-                <ul>
-                    <a href="#">
-                        <li>About Us</li>
-                    </a>
-                    <a href="#">
-                        <li>Blog</li>
-                    </a>
-                    <a href="#">
-                        <li>Portfolio</li>
-                    </a>
-                </ul>
-            </div>
-
-            <!--  for contact us info -->
+            <!--  for information info -->
             <div class="footer-items w-1/3">
                 <h3>INFORMATION</h3>
                 <div class="border1"></div>
@@ -1109,14 +1076,57 @@
                 </ul>
             </div>
         </div>
+
+        <div class="w-full md:w-1/4  mb-4 md:mb-0">
+            <form>
+                <div class="mb-6">
+                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-100 dark:text-white">Select
+                        Country</label>
+                    <select id="countries"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
+                        <option selected>Choose a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="language" class="block mb-2 text-sm font-medium text-gray-100 dark:text-white">Select
+                        Language</label>
+                    <select id="language"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option selected>English</option>
+                        <option value="US">Spanish</option>
+                        <option value="CA">Arabic</option>
+                        <option value="FR">Bengali</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+
+                <label class="block mb-2 text-sm font-normal text-gray-300 dark:text-white">Newsletter Signup</label>
+
+                <button type="submit"
+                        class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-400 border border-gray-300  font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">
+                    Sign up here
+                </button>
+            </form>
+        </div>
     </div>
 
     <!--   Footer Bottom start  -->
     <div class="footer-bottom">
         © Copyright 2023 COSTUME COLLECTED Limited. All rights reserved.
     </div>
-</div>
 
+    <!--  Footer Bottom Logo  -->
+    <div class="py-2">
+        <a href="#">
+            <img style="height: 112px; width: auto;" class="header_logo mx-auto"
+                 src="./dist/images/costumescollected%20merge%20wit.png" alt="Logo"/>
+        </a>
+    </div>
+</div>
 <!-- Footer Section || END -->
 
 

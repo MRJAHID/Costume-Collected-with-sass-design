@@ -114,3 +114,19 @@
     object-fit: contain;
   }
 }
+
+.banner_card_container {
+  height: 45rem;
+
+  @media only screen and (min-width: 768px) {
+    height: auto;
+  }
+}
+
+.splide__slide {
+  width: 100% !important;
+
+  @media only screen and (min-width: 768px) {
+    width: 33% !important;
+  }
+}

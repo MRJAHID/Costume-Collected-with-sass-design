@@ -92,7 +92,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="checkout.html">
+                        <a href="bag.html">
                             <i class="fa-solid fa-bag-shopping"></i>
                         </a>
                     </li>
@@ -593,215 +593,135 @@
 <main class="py-12">
     <div class="checkout container mx-auto px-2">
 
-        <div class="ltr-1n0ec7f e1li1ogk0 px-2 md:px-12">
-            <div class="ltr-ghj87x e1e8ldf00">
-                <h1 class="ltr-xr5yry-Display ehu26aw0">
-                    Shopping Bag</h1>
-            </div>
-            <a href="#" class="ltr-1i7kjl9-Footnote">Continue Shopping</a>
+        <!--        Head        -->
+        <div class="px-2 my-6 md:my-9">
+            <h1 class="font-medium text-2xl md:text-3xl pb-1">
+                CHECKOUT</h1>
         </div>
 
-        <div class="_a8f651">
-            <!--      Left Side       -->
-            <div class="_a57d8d">
-                <ul>
-                    <li class="_b632f1">
-                        <div class="_e179ee">
+        <!--        Main    -->
+        <main class="px-2">
+            <section class="checkout-form">
+                <form action="#!" method="get">
+                    <h6>Contact information</h6>
+                    <div class="form-control">
+                        <label for="checkout-email">E-mail</label>
+                        <div>
+                            <span class="fa fa-envelope"></span>
+                            <input type="email" id="checkout-email" name="checkout-email"
+                                   placeholder="Enter your email...">
                         </div>
-                        <ul class="_c92854">
-                            <li class="_f9e55c">
-                                <div class="_e73fa1">
-                                    <div class="_e55f4e">
-                                        <div class="_c7b82c">
-                                            <a href="#" class="ltr-4y8w0i-Body">
-                                                <picture>
-                                                    <source media="(min-width: 170px)"
-                                                            srcset="https://cdn-images.farfetch-contents.com/20/26/84/72/20268472_50331301_170.jpg">
-                                                    <img src="https://cdn-images.farfetch-contents.com/20/26/84/72/20268472_50331301_170.jpg"
-                                                         title="Interlocking G-logo plaque sunglasses"
-                                                         alt="Interlocking G-logo plaque sunglasses"
-                                                         data-testid="item-image"></picture>
-                                            </a></div>
-                                    </div>
-                                    <div class="_cfd662">
-                                        <div class="_b825c7">
-                                            <a href="#" class="e1hvsev21 ltr-1julgq8-Body">Gucci Eyewear</a>
-                                            <a
-                                                    href="#"
-                                                    class="e1hvsev20 ltr-1kebjs9-Body">Interlocking G-logo plaque
-                                                sunglasses</a>
-                                            <p class="_b1d204 ltr-1gp3mca-Footnote">
-                                                <span>FARFETCH ID:&nbsp;</span><span>20268472</span>
-                                            </p>
-                                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label for="checkout-phone">Phone</label>
+                        <div>
+                            <span class="fa fa-phone"></span>
+                            <input type="tel" name="checkout-phone" id="checkout-phone"
+                                   placeholder="Enter you phone...">
+                        </div>
+                    </div>
+                    <br>
+                    <h6>Shipping address</h6>
+                    <div class="form-control">
+                        <label for="checkout-name">Full name</label>
+                        <div>
+                            <span class="fa fa-user-circle"></span>
+                            <input type="text" id="checkout-name" name="checkout-name" placeholder="Enter you name...">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label for="checkout-address">Address</label>
+                        <div>
+                            <span class="fa fa-home"></span>
+                            <input type="text" name="checkout-address" id="checkout-address"
+                                   placeholder="Your address...">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label for="checkout-city">City</label>
+                        <div>
+                            <span class="fa fa-building"></span>
+                            <input type="text" name="checkout-city" id="checkout-city" placeholder="Your city...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="checkout-country">Country</label>
+                            <div>
+                                <span class="fa fa-globe"></span>
+                                <input type="text" name="checkout-country" id="checkout-country"
+                                       placeholder="Your country..." list="country-list">
+                                <datalist id="country-list">
+                                    <option value="India"></option>
+                                    <option value="USA"></option>
+                                    <option value="Russia"></option>
+                                    <option value="Japan"></option>
+                                    <option value="Egypt"></option>
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="checkout-postal">Postal code</label>
+                            <div>
+                                <span class="fa fa-archive"></span>
+                                <input type="numeric" name="checkout-postal" id="checkout-postal"
+                                       placeholder="Your postal code...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-control checkbox-control">
+                        <input type="checkbox" name="checkout-checkbox" id="checkout-checkbox">
+                        <label for="checkout-checkbox">Use as billing address.</label>
+                    </div>
+                    <div class="form-control-btn">
+                        <button>Save & Continue</button>
+                    </div>
+                </form>
+            </section>
 
-
-                                        <div class="_da9a3f">
-                                            <div class="ltr-1nvb3i5">
-                                                <p class="font-medium text-lg">
-                                                    $860</p>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="_d8bf01">
-                                            <div>
-                                                <div class="_f00d5a mb-4">Size</p>
-                                                    <div class="_a6a9c9 my-1">
-                                                        <span class="_b2604a ltr-2pfgen-Body-BodyBold font-medium">One Size </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="_eb96b5">
-                                                <p class="ltr-1ubfewr-Body eavjcfb4">Quantity</p>
-                                                <div class="_a6a9c9">
-                                                    <span class="_b2604a ltr-2pfgen-Body-BodyBold font-medium">1</span>
-                                                    <button class="_bd0d04 ltr-1i7kjl9-Footnote">Change
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+            <section class="checkout-details">
+                <div class="checkout-details-inner">
+                    <div class="checkout-lists">
+                        <div class="card">
+                            <div class="card-image"><img src="https://rvs-checkout-page.onrender.com/photo1.png" alt="">
+                            </div>
+                            <div class="card-details">
+                                <div class="card-name">Vintage Backbag</div>
+                                <div class="card-price">$54.99 <span>$94.99</span></div>
+                                <div class="card-wheel">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
                                 </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <!--    Right Side  -->
-            <aside role="none" class="_ff9482">
-                <div>
-                    <div class="_fbd685">
-                        <div class="_becb76">
-                            <h2 class="ltr-agm80e-Heading e993tv53">Summary</h2>
-                            <div class="ltr-l40ypq e993tv52">
-                                <p role="paragraph" class="ltr-1eoy87d eqr5eq31">
-                                    <span class="ltr-4y8w0i-Body">Subtotal</span><span
-                                        class="ltr-isgvpc eqr5eq30"><span>$860.00</span></span>
-                                </p>
-                                <p role="paragraph" class="ltr-1eoy87d eqr5eq31"><span
-                                        class="ltr-4y8w0i-Body">Delivery</span><span
-                                        class="ltr-isgvpc eqr5eq30"><span>$24.00</span></span></p>
-                                <hr aria-hidden="true" class="ltr-1y1zdsy e993tv54">
-                                <p role="paragraph" class="ltr-1soajkb e993tv51 flex justify-between"><span
-                                        class="ltr-2pfgen-Body-BodyBold">Total</span><span
-                                        class="ltr-isgvpc e993tv50"><span>USD <span
-                                        class="ltr-2pfgen-Body-BodyBold">$884.00</span></span></span>
-                                </p></div>
+                            </div>
                         </div>
-                        <div class="_ca273d">
-                            <button type="button"
-                                    class="w-full text-white hover:text-gray-800  bg-gray-900 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex justify-center items-center mr-2 mb-2">
-                                Go To Checkout
-                            </button>
+                        <div class="card">
+                            <div class="card-image"><img src="https://rvs-checkout-page.onrender.com/photo2.png" alt="">
+                            </div>
+                            <div class="card-details">
+                                <div class="card-name">Levi Shoes</div>
+                                <div class="card-price">$74.99 <span>$124.99</span></div>
+                                <div class="card-wheel">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="checkout-shipping">
+                        <h6>Shipping</h6>
+                        <p>$19</p>
+                    </div>
+                    <div class="checkout-total">
+                        <h6 class="shiptotal">Total</h6>
+                        <p>$148.98</p>
                     </div>
                 </div>
-            </aside>
-        </div>
+            </section>
 
-        <!--        ------------------      -->
-        <section class="_b61382">
-            <div class="_ee944b">
-                <div class="_a38bcd">
-                    <div class="_ab8480 ltr-15kvush">
-                        <i class="fa-solid fa-boxes-packing fa-lg"></i>
-                    </div>
-                    <p class="_d5fe33">Free global returns collection service</p></div>
-                <p class="_a8cba2">We offer a free returns collection service on all orders
-                    worldwide</p></div>
-            <div class="_ee944b">
-                <div class="_a38bcd">
-                    <div class="_ab8480 ltr-15kvush">
-                        <i class="fa-solid fa-boxes-packing fa-lg"></i>
-                    </div>
-                    <p class="_d5fe33">Upgrade your Access rewards</p></div>
-                <p class="_a8cba2">Every new order takes you one step closer to unlocking
-                    exclusive rewards</p></div>
-            <div class="_ee944b" data-testid="usp">
-                <div class="_a38bcd">
-                    <div class="_ab8480 ltr-15kvush">
-                        <i class="fa-solid fa-boxes-packing fa-lg"></i>
-                    </div>
-                    <p class="_d5fe33">Fast delivery</p></div>
-                <p class="_a8cba2">To your door in no time. Explore F90, Same Day delivery and
-                    Express delivery.</p></div>
-        </section>
+        </main>
     </div>
-
-    <!-- Products Showcase Section || START -->
-    <section class="container mb-6 px-2 md:px-4 mx-auto mt-12">
-        <div class="product_showcase">
-            <div class="product_showcase_container">
-                <div class="product_showcase_title">
-                    <p>Back in stock: </p>
-                    <a href="products.html" target="_self" class="">Shop Now</a>
-                </div>
-                <div class="product_showcase_content">
-                    <div class="products">
-                        <div class="product">
-                            <div class="product_img">
-                                <img src="./dist/images/dress2.png"
-                                     alt=""/>
-                                <span class="heartTip">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <div class="product_text">
-                                <span>Back in stock</span>
-                                <a href="singleProduct.html">Christoper Kane</a>
-                                <p>Full Bloom A-Line Dress</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product_img">
-                                <img src="./dist/images/bag2.png"
-                                     alt=""/>
-                                <span class="heartTip">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <div class="product_text">
-                                <span>Back in stock</span>
-                                <a href="singleProduct.html">Christoper Kane</a>
-                                <p>Full Bloom A-Line Dress</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product_img">
-                                <img src="./dist/images/dress2.png"
-                                     alt=""/>
-                                <span class="heartTip">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <div class="product_text">
-                                <span>Back in stock</span>
-                                <a href="singleProduct.html">Christoper Kane</a>
-                                <p>Full Bloom A-Line Dress</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="product_img">
-                                <img src="./dist/images/banner1.png"
-                                     alt=""/>
-                                <span class="heartTip">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <div class="product_text">
-                                <span>Back in stock</span>
-                                <a href="singleProduct.html">Christoper Kane</a>
-                                <p>Full Bloom A-Line Dress</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Products Showcase Section || END -->
 </main>
 <!-- Main Content || END -->
 
