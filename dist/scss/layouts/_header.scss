@@ -431,3 +431,28 @@
     }
   }
 }
+
+.cart_number{
+  position: absolute;
+  background: #ffffff;
+  color: #000;
+  top: 12px;
+  font-weight: 400;
+  right: 8px;
+  text-align: center;
+  font-size: 14px;
+  min-width: 14px;
+  line-height: 14px;
+  border-radius: 50%;
+}
+
+// Search Results
+
+.search_result{
+  background: #fff;
+  height: 10vh;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 105px;
+}
