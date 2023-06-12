@@ -15,3 +15,14 @@ document.addEventListener("alpine:init", () => {
   }));
 });
 
+
+//Small Cart Open Close JS
+$(document).ready(function () {
+  $('#small_cart_section_div').click(function () {
+    $('#small_cart_container').show();
+  });
+  $('.small_cart-close').click(function () {
+    $('#small_cart_container').hide();
+  });
+});
+
