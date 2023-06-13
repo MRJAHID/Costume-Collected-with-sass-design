@@ -1,0 +1,10 @@
+@mixin hoverbtn {
+  box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.5);
+}
+
+@mixin hoverbtncolor {
+  &:hover {
+    background-color: $bg;
+    color: #fff;
+  }
+}

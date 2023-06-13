@@ -1,0 +1,107 @@
+.profile_wrapper {
+  font-family: 'Jost', sans-serif;
+  .account {
+    &__wrapper {
+      max-width: 63rem;
+      margin: 5rem auto;
+      @media (max-width: 767px) {
+        margin: 1.5rem auto;
+      }
+    }
+
+    &__menu {
+      &.active a {
+        color: $text-color;
+        font-weight: 600;
+      }
+    }
+
+    &__items {
+      margin: 0 -5px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    &__item {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      padding: 40px 20px;
+      text-align: center;
+      margin: 6px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+      transition: all 0.5s linear;
+
+      &:hover {
+        border: 1px solid $primary-color-ash;
+      }
+
+      span {
+        color: $bg;
+        font-weight: 600;
+
+        i {
+          width: 2.5rem;
+          height: 2.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          background: #dbeefd;
+          border-radius: 23px;
+          color: $text-color;
+        }
+      }
+    }
+
+    &__title {
+      legend {
+        color: $bg;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 70px;
+          margin-top: 0.5rem;
+          height: 3px;
+          background: $primary-color-ash;
+        }
+      }
+    }
+  }
+
+
+  .profile {
+    &__form {
+      border-bottom: 1px solid $smoke;
+
+      &--label {
+        color: $secondary-color-black;
+        font-weight: normal;
+        font-size: 0.9rem;
+      }
+
+      &--input {
+        border: 1px solid $smoke;
+        padding: 6px 1rem;
+        color: $bg;
+        font-size: 0.8rem;
+      }
+
+      &--btn-back {
+        background-color: $secondary-color-black;
+        width: 5rem;
+      }
+
+      &--btn-update {
+        background-color: $primary-color-ash;
+        width: 7.8rem;
+      }
+    }
+  }
+
+}
